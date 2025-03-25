@@ -1,82 +1,50 @@
-import { useEffect, useState } from 'react';
-import {
-  IonFab,
-  IonFabButton,
-  IonIcon,
-  IonPage,
-  IonContent,
-  IonAlert,
-  IonButton,
-} from '@ionic/react';
-import { camera, close } from 'ionicons/icons';
-import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
+import React, { useState } from 'react';
+// import { BarcodeScanning } from '@capacitor-mlkit/barcode-scanning';
+import { IonButton, IonContent, IonPage, IonText } from '@ionic/react';
+import * as MLKit from '@capacitor-mlkit/barcode-scanning';
+// import BarcodeScanner from '@capacitor-mlkit/barcode-scanning';
+import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 
-const Home: React.FC = () => {
-  const [scannedData, setScannedData] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [isScanning, setIsScanning] = useState(false);
-
-  useEffect(() => {
-    const checkPermission = async () => {
-      const status = await BarcodeScanner.checkPermission({ force: true });
-      if (status.granted === false) {
-        setError('Aplikace potřebuje přístup ke kameře.');
-      }
-    };
-
-    checkPermission();
-  }, []);
+const BarcodeScan: React.FC = () => {
+  const [scannedCode, setScannedCode] = useState<string | null>(null);
 
   const startScan = async () => {
     try {
-      document.body.classList.add('scanner-active'); // Skryje obsah pod skenerem
-      setIsScanning(true);
-      const result = await BarcodeScanner.startScan();
-      document.body.classList.remove('scanner-active');
-      setIsScanning(false);
-
-      if (result.hasContent) {
-        setScannedData(result.content);
+      const result = await BarcodeScanner.scan();
+      if (result.barcodes.length > 0) {
+        setScannedCode(result.barcodes[0].rawValue);
+      } else {
+        setScannedCode('Žádný kód nenačten.');
       }
-    } catch (err) {
-      setError('Nepodařilo se spustit skener.');
-      setIsScanning(false);
+    } catch (error) {
+      console.error('Chyba při skenování:', error);
+      setScannedCode('Chyba při skenování.');
     }
-  };
-
-  const stopScan = async () => {
-    await BarcodeScanner.stopScan();
-    document.body.classList.remove('scanner-active');
-    setIsScanning(false);
   };
 
   return (
     <IonPage>
-      <IonContent>
-        <h1>Naskenovaný kód: {scannedData}</h1>
+      <IonContent className="ion-padding">
+        <IonButton expand="full" onClick={startScan}>
+          📷 Spustit skenování
+        </IonButton>
 
-        {/* Floating Action Button (FAB) */}
-        {!isScanning && (
-          <IonFab vertical="bottom" horizontal="end" slot="fixed">
-            <IonFabButton onClick={startScan}>
-              <IonIcon icon={camera} />
-            </IonFabButton>
-          </IonFab>
+        {scannedCode && (
+          <IonText>
+            <h2>Načtený kód:</h2>
+            <p>{scannedCode}</p>
+          </IonText>
         )}
-
-        {/* Zrušit skenování */}
-        {isScanning && (
-          <IonButton expand="full" color="danger" onClick={stopScan}>
-            <IonIcon icon={close} slot="start" />
-            Zrušit skenování
-          </IonButton>
-        )}
-
-        {/* Chybová hláška */}
-        {error && <IonAlert isOpen={true} message={error} buttons={['OK']} />}
+        <IonButton
+          color="danger"
+          expand="full"
+          onClick={() => setScannedCode(null)}
+        >
+          ❌ Zrušit skenování
+        </IonButton>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default BarcodeScan;
