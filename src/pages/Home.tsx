@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { IonButton, IonContent, IonPage, IonText, IonImg } from '@ionic/react';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
-
+import './Home.css';
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
   const [item, setItem] = useState<{
     id: number;
     ean: string;
     name: string;
-    image: string;
+    img: string;
   } | null>(null);
   const [database, setDatabase] = useState<any[]>([]);
 
@@ -24,7 +24,8 @@ const BarcodeScan: React.FC = () => {
     try {
       const result = await BarcodeScanner.scan();
       if (result.barcodes.length > 0) {
-        const code = result.barcodes[0].rawValue;
+        // const code = result.barcodes[0].rawValue;
+        const code = '8594033198633';
         setScannedCode(code);
         findItemInDatabase(code);
       } else {
@@ -50,6 +51,7 @@ const BarcodeScan: React.FC = () => {
   return (
     <IonPage>
       <IonContent className="ion-padding">
+        <div className="mt"></div>
         <IonButton expand="full" onClick={startScan}>
           📷 Spustit skenování
         </IonButton>
@@ -64,7 +66,7 @@ const BarcodeScan: React.FC = () => {
         {item ? (
           <div>
             <h2>{item.name}</h2>
-            <IonImg src={item.image} alt={item.name} />
+            <IonImg src={item.img} alt={item.name} />
           </div>
         ) : scannedCode ? (
           <p>Produkt nebyl nalezen v databázi.</p>
