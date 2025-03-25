@@ -1,24 +1,49 @@
-import React, { useState } from 'react';
-// import { BarcodeScanning } from '@capacitor-mlkit/barcode-scanning';
-import { IonButton, IonContent, IonPage, IonText } from '@ionic/react';
-import * as MLKit from '@capacitor-mlkit/barcode-scanning';
-// import BarcodeScanner from '@capacitor-mlkit/barcode-scanning';
+import React, { useState, useEffect } from 'react';
+import { IonButton, IonContent, IonPage, IonText, IonImg } from '@ionic/react';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
+  const [item, setItem] = useState<{
+    id: number;
+    ean: string;
+    name: string;
+    image: string;
+  } | null>(null);
+  const [database, setDatabase] = useState<any[]>([]);
+
+  // Načtení JSON při startu aplikace
+  useEffect(() => {
+    fetch('/database.json')
+      .then((res) => res.json())
+      .then((data) => setDatabase(data))
+      .catch((error) => console.error('Chyba při načítání databáze:', error));
+  }, []);
 
   const startScan = async () => {
     try {
       const result = await BarcodeScanner.scan();
       if (result.barcodes.length > 0) {
-        setScannedCode(result.barcodes[0].rawValue);
+        const code = result.barcodes[0].rawValue;
+        setScannedCode(code);
+        findItemInDatabase(code);
       } else {
         setScannedCode('Žádný kód nenačten.');
+        setItem(null);
       }
     } catch (error) {
       console.error('Chyba při skenování:', error);
       setScannedCode('Chyba při skenování.');
+      setItem(null);
+    }
+  };
+
+  const findItemInDatabase = (code: string) => {
+    const foundItem = database.find((item) => item.ean === code);
+    if (foundItem) {
+      setItem(foundItem);
+    } else {
+      setItem(null);
     }
   };
 
@@ -35,13 +60,15 @@ const BarcodeScan: React.FC = () => {
             <p>{scannedCode}</p>
           </IonText>
         )}
-        <IonButton
-          color="danger"
-          expand="full"
-          onClick={() => setScannedCode(null)}
-        >
-          ❌ Zrušit skenování
-        </IonButton>
+
+        {item ? (
+          <div>
+            <h2>{item.name}</h2>
+            <IonImg src={item.image} alt={item.name} />
+          </div>
+        ) : scannedCode ? (
+          <p>Produkt nebyl nalezen v databázi.</p>
+        ) : null}
       </IonContent>
     </IonPage>
   );
