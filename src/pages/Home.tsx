@@ -24,8 +24,8 @@ const BarcodeScan: React.FC = () => {
     try {
       const result = await BarcodeScanner.scan();
       if (result.barcodes.length > 0) {
-        // const code = result.barcodes[0].rawValue;
-        const code = '8594033198633';
+        const code = result.barcodes[0].rawValue;
+        // const code = '8594033198633';
         setScannedCode(code);
         findItemInDatabase(code);
       } else {
