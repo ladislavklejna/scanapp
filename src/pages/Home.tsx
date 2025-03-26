@@ -44,13 +44,19 @@ const dummyData = {
     },
   ],
 };
+const [message, setMessage] = useState<string>();
+const [messagee, setMessagee] = useState<string>();
+
 const updateDatabase = async () => {
   try {
     const response = await fetch('http://10.0.1.51/up/products.json');
-    if (!response.ok) throw new Error('❌ Nelze stáhnout JSON');
+    if (!response.ok) {
+      setMessage('nelze stahnout');
+      throw new Error('❌ Nelze stáhnout JSON');
+    }
 
     const jsonData = await response.json();
-
+    setMessage(jsonData);
     // Uložit do lokálního úložiště
     await Filesystem.writeFile({
       path: 'products.json',
@@ -58,9 +64,10 @@ const updateDatabase = async () => {
       directory: Directory.Data,
       encoding: Encoding.UTF8,
     });
-
+    setMessagee('aktualizovano');
     console.log('✅ JSON databáze aktualizována!');
   } catch (error) {
+    setMessagee('chyba aktualizace DB');
     console.error('Chyba při aktualizaci databáze:', error);
   }
 };
@@ -274,7 +281,8 @@ const BarcodeScan: React.FC = () => {
           <IonButton expand="full" onClick={updateDatabase}>
             Aktualizovat databázi
           </IonButton>
-
+          {message && <p>{message}</p>}
+          {messagee && <p>{messagee}</p>}
           {/* <IonText>
           <h2>Logy:</h2>
         </IonText> */}
