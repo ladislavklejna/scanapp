@@ -2,17 +2,15 @@
 .mt {
   margin-top: 100px;
 }
-.tst {
-  position: absolute;
-  bottom: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
-  min-width: 250px;
-  width: 50vw;
-}
+
 #logo {
   margin-top: 50px;
+}
+.placeholder {
+  min-height: 50px; /* Nastav výšku podle očekávaného textu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ion-button {
@@ -35,12 +33,22 @@ ion-button {
 .text-center {
   text-align: center;
 }
-.obalcontainer {
-  width: 80vw;
-  height: auto;
+.image-container {
   margin: 0 auto;
-  /* border: 1px solid red; */
+  width: 350px; /* Pevná šířka */
+  height: 175px; /* Pevná výška */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* border: 2px solid #000000;  */
+  border-radius: 8px; /* Zaoblené rohy */
 }
-.obal {
-  width: 100%;
+.image-container img {
+  width: auto;
+  height: 100%;
+  /* object-fit: contain; */
+}
+.rezerva-space {
+  height: 120px;
 }

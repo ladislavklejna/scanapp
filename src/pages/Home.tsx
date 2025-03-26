@@ -8,6 +8,9 @@ import {
   IonList,
   IonItem,
   IonRippleEffect,
+  IonGrid,
+  IonRow,
+  IonCol,
 } from '@ionic/react';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
@@ -16,6 +19,13 @@ import { PiBarcodeThin } from 'react-icons/pi';
 // Dummy data pro produkty
 const dummyData = {
   products: [
+    {
+      id: 0,
+      ean: '?',
+      image: 'error.png', // změněno na 'image'
+      brand: '?',
+      name: '?',
+    },
     {
       id: 1,
       ean: '8594033198633',
@@ -100,20 +110,20 @@ const loadLogs = async () => {
 
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
-  // const [item, setItem] = useState<{
-  //   id: number;
-  //   image: string;
-  //   ean: string;
-  //   brand: string;
-  //   name: string;
-  // } | null>(null);
   const [item, setItem] = useState<{
-    id: 1;
-    image: 'images/8594033198633';
-    ean: '8594033198633';
-    brand: 'Fresh';
-    name: 'Oblátka s čokoládovou náplňou';
+    id: number;
+    image: string;
+    ean: string;
+    brand: string;
+    name: string;
   } | null>(null);
+  // const [item, setItem] = useState<{
+  //   id: 1;
+  //   image: 'images/8594033198633';
+  //   ean: '8594033198633';
+  //   brand: 'Fresh';
+  //   name: 'Oblátka s čokoládovou náplňou';
+  // } | null>(null);
   const [logs, setLogs] = useState<any[]>([]); // Stav pro logy
 
   // Funkce pro skenování čárového kódu
@@ -126,7 +136,15 @@ const BarcodeScan: React.FC = () => {
 
         // Hledání produktu podle načteného kódu
         const foundItem = findProductByEAN(scannedValue);
-        // setItem(foundItem || null);
+        setItem(
+          foundItem || {
+            id: 0,
+            image: 'error.png', // Obrázek pro nenalezený produkt
+            ean: scannedValue,
+            brand: 'Neznámá značka',
+            name: 'Produkt nenalezen',
+          },
+        );
 
         // Záznam do logu
         const timestamp = getFormattedTimestamp();
@@ -158,44 +176,60 @@ const BarcodeScan: React.FC = () => {
     <IonPage>
       <IonContent className="ion-padding">
         <IonImg id="logo" src="Mokate.png" alt="logo" />
-
-        <div className="tst">
-          <IonButton
-            id="photobutton"
-            expand="full"
-            onClick={startScan}
-            shape="round"
-          >
-            <PiBarcodeThin size={80} />
-            {/* <h1>Scanovat</h1> */}
-          </IonButton>
+        <IonGrid>
+          {/* <IonRow>
+            <IonCol>
+              <div className="placeholder">
+                {item && (
+                  <p>{item != null ? 'Produkt nalezen' : 'NENALEZENO'}</p>
+                )}
+              </div>
+            </IonCol>
+          </IonRow> */}
+          <IonRow>
+            <IonCol>
+              <div className="placeholder">
+                {item && <h2>{item?.brand || '?'}</h2>}
+              </div>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <div className="placeholder">
+                {item && <h2>{item?.name || '?'}</h2>}
+              </div>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <div className="image-container">
+                {item && (
+                  <IonImg className="obal" src={item?.image || 'error.png'} />
+                )}
+              </div>
+            </IonCol>
+          </IonRow>
+          <IonRow></IonRow>
+          <IonRow>
+            <IonCol>
+              <IonButton expand="full" onClick={startScan} shape="round">
+                <PiBarcodeThin size={80} />
+                {/* <h1>Scanovat</h1> */}
+              </IonButton>
+            </IonCol>
+          </IonRow>
           {scannedCode && (
             <IonText class="text-center">
               <p>Načtený kód:</p>
               <h2>{scannedCode}</h2>
             </IonText>
           )}
-        </div>
-
-        {/* {item && ( */}
-        <div>
-          <IonText className="text-center" id="bottom">
-            <p>Produkt nalezen:</p>
-            <p>Fresh</p>
-            <p>Oblátka s čokoládovou náplňou</p>
-          </IonText>
-          <div className="obalcontainer">
-            <IonImg className="obal" src="/images/8594033198633.png" />
-          </div>
-        </div>
-        {/* )} */}
-
-        {/* <IonText>
+          {/* <IonText>
           <h2>Logy:</h2>
         </IonText> */}
 
-        {/* Zobrazení logů */}
-        {/* <IonList>
+          {/* Zobrazení logů */}
+          {/* <IonList>
           {logs.map((log, index) => (
             <IonItem key={index}>
               <IonText>
@@ -206,6 +240,7 @@ const BarcodeScan: React.FC = () => {
             </IonItem>
           ))}
         </IonList> */}
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
