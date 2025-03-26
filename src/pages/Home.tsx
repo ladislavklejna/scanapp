@@ -16,16 +16,11 @@ import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 import './Home.css';
 import { PiBarcodeThin } from 'react-icons/pi';
+
+// http://10.0.1.51:5000/sharing/t0ukj9DG3
 // Dummy data pro produkty
 const dummyData = {
   products: [
-    {
-      id: 0,
-      ean: '?',
-      image: 'error.png', // změněno na 'image'
-      brand: '?',
-      name: '?',
-    },
     {
       id: 1,
       ean: '8594033198633',
@@ -49,6 +44,54 @@ const dummyData = {
     },
   ],
 };
+const updateDatabase = async () => {
+  try {
+    const response = await fetch(
+      'http://10.0.1.51:5000/sharing/t0ukj9DG3/products.json',
+    );
+    if (!response.ok) throw new Error('❌ Nelze stáhnout JSON');
+
+    const jsonData = await response.json();
+
+    // Uložit do lokálního úložiště
+    await Filesystem.writeFile({
+      path: 'products.json',
+      data: JSON.stringify(jsonData),
+      directory: Directory.Data,
+      encoding: Encoding.UTF8,
+    });
+
+    console.log('✅ JSON databáze aktualizována!');
+  } catch (error) {
+    console.error('Chyba při aktualizaci databáze:', error);
+  }
+};
+// const downloadImage = async (imageUrl: string, imageName: string) => {
+//   try {
+//     const response = await fetch(imageUrl);
+//     if (!response.ok) throw new Error('❌ Nelze stáhnout obrázek');
+
+//     const blob = await response.blob();
+//     const reader = new FileReader();
+
+//     reader.onloadend = async () => {
+//       const base64data = reader.result?.toString().split(',')[1];
+
+//       await Filesystem.writeFile({
+//         path: `images/${imageName}`,
+//         data: base64data || '',
+//         directory: Directory.Data,
+//         encoding: Encoding.Base64,
+//       });
+
+//       console.log(`✅ Obrázek ${imageName} uložen!`);
+//     };
+
+//     reader.readAsDataURL(blob);
+//   } catch (error) {
+//     console.error('Chyba při stahování obrázku:', error);
+//   }
+// };
 
 // Funkce pro vyhledání produktu podle EAN
 const findProductByEAN = (ean: string) => {
@@ -171,7 +214,13 @@ const BarcodeScan: React.FC = () => {
       setLogs(loadedLogs); // Načteme logy při startu aplikace
     });
   }, []);
+  useEffect(() => {
+    const fetchAndUpdateDatabase = async () => {
+      await updateDatabase();
+    };
 
+    fetchAndUpdateDatabase();
+  }, []);
   return (
     <IonPage>
       <IonContent className="ion-padding">
@@ -224,6 +273,10 @@ const BarcodeScan: React.FC = () => {
               <h2>{scannedCode}</h2>
             </IonText>
           )}
+          <IonButton expand="full" onClick={updateDatabase}>
+            Aktualizovat databázi
+          </IonButton>
+
           {/* <IonText>
           <h2>Logy:</h2>
         </IonText> */}
