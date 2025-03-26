@@ -46,9 +46,7 @@ const dummyData = {
 };
 const updateDatabase = async () => {
   try {
-    const response = await fetch(
-      'http://10.0.1.51:5000/sharing/t0ukj9DG3/products.json',
-    );
+    const response = await fetch('http://10.0.1.51/up/products.json');
     if (!response.ok) throw new Error('❌ Nelze stáhnout JSON');
 
     const jsonData = await response.json();
