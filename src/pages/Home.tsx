@@ -154,7 +154,7 @@ const BarcodeScan: React.FC = () => {
       if (result.barcodes.length > 0) {
         const scannedValue = result.barcodes[0].rawValue;
         setScannedCode(scannedValue);
-
+        Haptics.vibrate({ duration: 200 });
         // Hledání produktu podle načteného kódu
         const foundItem = findProductByEAN(scannedValue);
 
@@ -171,7 +171,7 @@ const BarcodeScan: React.FC = () => {
                 description: 'Produkt nenalezen',
               },
         );
-        Haptics.vibrate({ duration: 100 });
+
         // Záznam do logu
         const timestamp = getFormattedTimestamp();
         const resultMessage = foundItem
