@@ -19,6 +19,9 @@ import './Home.css';
 import { PiBarcodeThin } from 'react-icons/pi';
 import db from '../data/database.json';
 // http://10.0.1.51:5000/sharing/t0ukj9DG3
+import { ScreenOrientation } from '@capacitor/screen-orientation';
+
+ScreenOrientation.lock({ orientation: 'portrait' });
 
 // const updateDatabase = async () => {
 //   try {
