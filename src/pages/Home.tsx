@@ -14,63 +14,36 @@ import {
 } from '@ionic/react';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+import { Haptics } from '@capacitor/haptics';
 import './Home.css';
 import { PiBarcodeThin } from 'react-icons/pi';
-
+import db from '../data/database.json';
 // http://10.0.1.51:5000/sharing/t0ukj9DG3
-// Dummy data pro produkty
-const dummyData = {
-  products: [
-    {
-      id: 1,
-      ean: '8594033198633',
-      image: 'images/8594033198633.png', // změněno na 'image'
-      brand: 'Fresh',
-      name: 'Oblátka s čokoládovou náplňou',
-    },
-    {
-      id: 2,
-      ean: '5051007168274',
-      image: 'images/5051007168274.png', // změněno na 'image'
-      brand: 'Tesco',
-      name: 'Oplatka s lískooříškovou náplní',
-    },
-    {
-      id: 3,
-      ean: '4056489725305',
-      image: 'images/4056489725305.png', // změněno na 'image'
-      brand: 'Tastino',
-      name: 'Terezka citrónová',
-    },
-  ],
-};
-const [message, setMessage] = useState<string>();
-const [messagee, setMessagee] = useState<string>();
 
-const updateDatabase = async () => {
-  try {
-    const response = await fetch('http://10.0.1.51/up/products.json');
-    if (!response.ok) {
-      setMessage('nelze stahnout');
-      throw new Error('❌ Nelze stáhnout JSON');
-    }
+// const updateDatabase = async () => {
+//   try {
+//     const response = await fetch('http://10.0.1.51/up/products.json');
+//     if (!response.ok) {
+//       setMessage('nelze stahnout');
+//       throw new Error('❌ Nelze stáhnout JSON');
+//     }
 
-    const jsonData = await response.json();
-    setMessage(jsonData);
-    // Uložit do lokálního úložiště
-    await Filesystem.writeFile({
-      path: 'products.json',
-      data: JSON.stringify(jsonData),
-      directory: Directory.Data,
-      encoding: Encoding.UTF8,
-    });
-    setMessagee('aktualizovano');
-    console.log('✅ JSON databáze aktualizována!');
-  } catch (error) {
-    setMessagee('chyba aktualizace DB');
-    console.error('Chyba při aktualizaci databáze:', error);
-  }
-};
+//     const jsonData = await response.json();
+//     setMessage(jsonData);
+//     // Uložit do lokálního úložiště
+//     await Filesystem.writeFile({
+//       path: 'products.json',
+//       data: JSON.stringify(jsonData),
+//       directory: Directory.Data,
+//       encoding: Encoding.UTF8,
+//     });
+//     setMessagee('aktualizovano');
+//     console.log('✅ JSON databáze aktualizována!');
+//   } catch (error) {
+//     setMessagee('chyba aktualizace DB');
+//     console.error('Chyba při aktualizaci databáze:', error);
+//   }
+// };
 // const downloadImage = async (imageUrl: string, imageName: string) => {
 //   try {
 //     const response = await fetch(imageUrl);
@@ -100,7 +73,7 @@ const updateDatabase = async () => {
 
 // Funkce pro vyhledání produktu podle EAN
 const findProductByEAN = (ean: string) => {
-  return dummyData.products.find((p) => p.ean === ean);
+  return db.find((p) => p.EANks === ean);
 };
 // Funkce pro získání formátovaného data
 const getFormattedTimestamp = () => {
@@ -159,11 +132,11 @@ const loadLogs = async () => {
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
   const [item, setItem] = useState<{
-    id: number;
-    image: string;
-    ean: string;
-    brand: string;
-    name: string;
+    ItemNo: number;
+    // image: string;
+    EANks: string;
+    // brand: string;
+    description: string;
   } | null>(null);
   // const [item, setItem] = useState<{
   //   id: 1;
@@ -184,16 +157,21 @@ const BarcodeScan: React.FC = () => {
 
         // Hledání produktu podle načteného kódu
         const foundItem = findProductByEAN(scannedValue);
-        setItem(
-          foundItem || {
-            id: 0,
-            image: 'error.png', // Obrázek pro nenalezený produkt
-            ean: scannedValue,
-            brand: 'Neznámá značka',
-            name: 'Produkt nenalezen',
-          },
-        );
 
+        setItem(
+          foundItem
+            ? {
+                ItemNo: Number(foundItem.ItemNo), // Převedení na číslo
+                EANks: foundItem.EANks,
+                description: foundItem.Description || 'Popis není dostupný', // Oprava velkého "D" na malé "d"
+              }
+            : {
+                ItemNo: 0,
+                EANks: scannedValue,
+                description: 'Produkt nenalezen',
+              },
+        );
+        Haptics.vibrate({ duration: 100 });
         // Záznam do logu
         const timestamp = getFormattedTimestamp();
         const resultMessage = foundItem
@@ -214,18 +192,18 @@ const BarcodeScan: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    loadLogs().then((loadedLogs) => {
-      setLogs(loadedLogs); // Načteme logy při startu aplikace
-    });
-  }, []);
-  useEffect(() => {
-    const fetchAndUpdateDatabase = async () => {
-      await updateDatabase();
-    };
+  // useEffect(() => {
+  //   loadLogs().then((loadedLogs) => {
+  //     setLogs(loadedLogs); // Načteme logy při startu aplikace
+  //   });
+  // }, []);
+  // useEffect(() => {
+  //   const fetchAndUpdateDatabase = async () => {
+  //     await updateDatabase();
+  //   };
 
-    fetchAndUpdateDatabase();
-  }, []);
+  //   fetchAndUpdateDatabase();
+  // }, []);
   return (
     <IonPage>
       <IonContent className="ion-padding">
@@ -243,23 +221,23 @@ const BarcodeScan: React.FC = () => {
           <IonRow>
             <IonCol>
               <div className="placeholder">
-                {item && <h2>{item?.brand || '?'}</h2>}
+                {/* {item && <h2>{item?.brand || '?'}</h2>} */}
               </div>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
               <div className="placeholder">
-                {item && <h2>{item?.name || '?'}</h2>}
+                {item && <h2>{item?.description || '?'}</h2>}
               </div>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
               <div className="image-container">
-                {item && (
+                {/* {item && (
                   <IonImg className="obal" src={item?.image || 'error.png'} />
-                )}
+                )} */}
               </div>
             </IonCol>
           </IonRow>
@@ -278,11 +256,11 @@ const BarcodeScan: React.FC = () => {
               <h2>{scannedCode}</h2>
             </IonText>
           )}
-          <IonButton expand="full" onClick={updateDatabase}>
+          {/* <IonButton expand="full" onClick={updateDatabase}>
             Aktualizovat databázi
           </IonButton>
           {message && <p>{message}</p>}
-          {messagee && <p>{messagee}</p>}
+          {messagee && <p>{messagee}</p>} */}
           {/* <IonText>
           <h2>Logy:</h2>
         </IonText> */}
