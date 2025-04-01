@@ -8,6 +8,8 @@ import {
   IonGrid,
   IonRow,
   IonCol,
+  IonToast,
+  useIonToast,
 } from '@ionic/react';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
@@ -17,6 +19,8 @@ import { PiBarcodeThin } from 'react-icons/pi';
 import db from '../data/database.json';
 // http://10.0.1.51:5000/sharing/t0ukj9DG3
 import { ScreenOrientation } from '@capacitor/screen-orientation';
+import { App } from '@capacitor/app';
+import { Toast } from '@capacitor/toast';
 
 ScreenOrientation.lock({ orientation: 'portrait' });
 
@@ -131,6 +135,7 @@ const loadLogs = async () => {
 
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
+  const [backPressed, setBackPressed] = useState(false);
   const [item, setItem] = useState<{
     ItemNo: number;
     // image: string;
@@ -191,6 +196,42 @@ const BarcodeScan: React.FC = () => {
       setScannedCode('Chyba při skenování.');
     }
   };
+  useEffect(() => {
+    let backButtonListener: any;
+
+    const setupListener = async () => {
+      backButtonListener = await App.addListener(
+        'backButton',
+        async ({ canGoBack }) => {
+          if (canGoBack) {
+            // Pokud je možné vrátit se zpět (např. v rámci navigace), pustíme standardní chování
+            window.history.back();
+          } else {
+            // Pokud uživatel stiskl zpět dvakrát, ukončíme aplikaci
+            if (backPressed) {
+              App.exitApp();
+            } else {
+              // Jinak zobrazíme toast a nastavíme timeout na další možnost ukončení
+              setBackPressed(true);
+              await Toast.show({
+                text: 'Stiskněte znovu pro zavření aplikace',
+              });
+
+              setTimeout(() => setBackPressed(false), 2000); // Reset po 2 sekundách
+            }
+          }
+        },
+      );
+    };
+
+    setupListener();
+
+    return () => {
+      if (backButtonListener) {
+        backButtonListener.remove();
+      }
+    };
+  }, [backPressed]);
 
   // useEffect(() => {
   //   loadLogs().then((loadedLogs) => {

@@ -16,7 +16,7 @@
   "dependencies": {
     "@capacitor-mlkit/barcode-scanning": "^7.1.0",
     "@capacitor/android": "^7.1.0",
-    "@capacitor/app": "7.0.0",
+    "@capacitor/app": "^7.0.0",
     "@capacitor/assets": "^3.0.5",
     "@capacitor/core": "^7.1.0",
     "@capacitor/filesystem": "^7.0.0",
@@ -25,6 +25,7 @@
     "@capacitor/keyboard": "7.0.0",
     "@capacitor/screen-orientation": "^7.0.0",
     "@capacitor/status-bar": "7.0.0",
+    "@capacitor/toast": "^7.0.0",
     "@ionic/react": "^8.5.0",
     "@ionic/react-router": "^8.5.0",
     "@types/react-router": "^5.1.20",
