@@ -4,13 +4,21 @@
 }
 
 #logo {
-  margin-top: 50px;
+  margin: 20px auto;
+  width: 60%;
 }
-.placeholder {
-  min-height: 50px; /* Nastav výšku podle očekávaného textu */
+.scanbtn {
+  margin: 0 auto;
+  height: 70px;
+  width: 80%;
+}
+.placeholderlada {
+  min-height: 30px; /* Nastav výšku podle očekávaného textu */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* color: crimson; */
+  /* border: 1px solid red; */
 }
 
 ion-button {
@@ -36,19 +44,40 @@ ion-button {
 .image-container {
   margin: 0 auto;
   width: 350px; /* Pevná šířka */
-  height: 175px; /* Pevná výška */
-  /* display: flex; */
+  height: 350px; /* Pevná výška */
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   /* border: 2px solid #000000;  */
   border-radius: 8px; /* Zaoblené rohy */
+  /* border: 1px solid green; */
 }
 .image-container img {
-  width: auto;
+  width: 100%;
   height: 100%;
-  /* object-fit: contain; */
+  object-fit: contain;
 }
 .rezerva-space {
   height: 120px;
+}
+th {
+  width: 10ch;
+}
+#xxx {
+  height: 3em; /* nebo třeba 50px */
+  white-space: normal; /* povolí zalomení */
+  word-break: break-word; /* zalamuje dlouhá slova */
+}
+.text-red {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  margin: 0;
+}
+.pozor {
+  border: 2px solid red;
+}
+.marg-zero {
+  margin: 0;
 }

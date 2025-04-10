@@ -1,1452 +1,1724 @@
 [
     {
-        "ItemNo": "2101001",
-        "Description": "Káva standard směs zrno 70g",
-        "EANks": "8594002830106"
+        "id": "3502001",
+        "name": "Perník Mikuláš & Čertík",
+        "ean": "8595014610298",
+        "variants": "true",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101005",
-        "Description": "Káva Cafe Crema 1000g (beans)",
-        "EANks": "8594033195502"
+        "id": "3502000",
+        "name": "Perník Mikulášská nadílka",
+        "ean": "8595014610281",
+        "variants": "true",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101012",
-        "Description": "Káva Cafe Crema 500g (beans)",
-        "EANks": "8594033195199"
+        "id": "2101218",
+        "name": "Craft BRASIL MOGIANA 400g",
+        "ean": "8595014603054",
+        "variants": "false",
+        "gram": "400"
     },
     {
-        "ItemNo": "2101028",
-        "Description": "Kawa COFFEE BAR 1kg  ziarno",
-        "EANks": "8594033198336"
+        "id": "2101217",
+        "name": "Craft ETIOPIA SIDAMO 400g",
+        "ean": "8595014603030",
+        "variants": "false",
+        "gram": "400"
     },
     {
-        "ItemNo": "2101030",
-        "Description": "Marila káva Horeca 1kg beans",
-        "EANks": "8594033199807"
+        "id": "3401147",
+        "name": "Marilky kokos ",
+        "ean": "8595014602989",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "2101050",
-        "Description": "MP Crema Delicado 1000g",
-        "EANks": "8594033199678"
+        "id": "2101212",
+        "name": "Juta Świąteczna edycja ",
+        "ean": "8595014602934",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101051",
-        "Description": "MP Crema Delicado 500g",
-        "EANks": "8594033199715"
+        "id": "2101125",
+        "name": "Marila Craft Dark zrno",
+        "ean": "8595014602859",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "2101052",
-        "Description": "MP Crema Intensa 1000g",
-        "EANks": "8594033199692"
+        "id": "2101124",
+        "name": "Marila Craft Medium zrno",
+        "ean": "8595014602842",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "2101053",
-        "Description": "MP Crema Intensa 500g",
-        "EANks": "8594033199739"
+        "id": "2101123",
+        "name": "Marila Craft Blonde zrno",
+        "ean": "8595014602835",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "2101070",
-        "Description": "Marila káva Colombia zrno 500g",
-        "EANks": "8594002834043"
+        "id": "3519042",
+        "name": "Sandwich GANG borůvka",
+        "ean": "8595014602804",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101071",
-        "Description": "Marila káva Ethiopia 500g zrno",
-        "EANks": "8594002834029"
+        "id": "3519041",
+        "name": "Sandwich GANG jahoda",
+        "ean": "8595014602798",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101072",
-        "Description": "Marila káva Brazil zrno 500g",
-        "EANks": "8594002834005"
+        "id": "2114024",
+        "name": "Turtle Sidamo 1kg + mlýnek",
+        "ean": "8595014602781",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101091",
-        "Description": "Caffeteria Africa 500g (beans)",
-        "EANks": "5900649065048"
+        "id": "4001190",
+        "name": "Cookies Express ",
+        "ean": "8595014602767",
+        "variants": "false",
+        "gram": "270"
     },
     {
-        "ItemNo": "2101092",
-        "Description": "Caffeteria Asia 500g (beans)",
-        "EANks": "5900649065000"
+        "id": "3513037",
+        "name": "Kanapka piernikowa sliwkowa",
+        "ean": "8595014602729",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101093",
-        "Description": "Káva NY SCURO 500g (beans)",
-        "EANks": "8594002835439"
+        "id": "3513036",
+        "name": "Kanapka pernikowa malinowa",
+        "ean": "8595014602712",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101094",
-        "Description": "Káva NY MARRONE 500g (beans)",
-        "EANks": "8594002835422"
+        "id": "3513038",
+        "name": "Kanapka piernikowa jagodowa",
+        "ean": "8595014602705",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101110",
-        "Description": "Marila Craft Blonde 500g zrno",
-        "EANks": "8594002837761"
+        "id": "3401146",
+        "name": "Oplatka mléčná s proteinem ",
+        "ean": "8595014602613",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101111",
-        "Description": "Marila Craft Medium 500g zrno",
-        "EANks": "8594002837778"
+        "id": "3401145",
+        "name": "Opl.Black čoko s proteinem",
+        "ean": "8595014602606",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101112",
-        "Description": "Marila Craft Dark 500g zrno",
-        "EANks": "8594002837785"
+        "id": "3502026",
+        "name": "Perník ovocný - klaun",
+        "ean": "8595014602484",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101113",
-        "Description": "Marila Espresso 500g",
-        "EANks": "8594002837792"
+        "id": "2101201",
+        "name": "World Coffee Brazylia ",
+        "ean": "8595014602439",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101114",
-        "Description": "Marila Crema 500g zrno ZLATÁ",
-        "EANks": "8594002837808"
+        "id": "2101200",
+        "name": "World Coffee Brazylia",
+        "ean": "8595014602415",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101115",
-        "Description": "BIO Coffee HONDURAS 500g",
-        "EANks": "8594002837945"
+        "id": "3400987",
+        "name": "Marilky příchuť višeň",
+        "ean": "8595014602385",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101116",
-        "Description": "BIO Coffee PERU 500g",
-        "EANks": "8594002837969"
+        "id": "3400986",
+        "name": "Marilky přích vaječný koňak",
+        "ean": "8595014602378",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101117",
-        "Description": "Marila Espresso 500g PL, EX",
-        "EANks": "8594002837792"
+        "id": "3401142",
+        "name": "HI Easy hazelnut ",
+        "ean": "8595014602347",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101118",
-        "Description": "Marila Crema 500g zrno PL, EX",
-        "EANks": "8594002837808"
+        "id": "3401141",
+        "name": "HI Easy coffee",
+        "ean": "8595014602330",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101123",
-        "Description": "Marila Craft Blonde 100g zrno",
-        "EANks": "8595014602835"
+        "id": "2101199",
+        "name": "Mokate Espresso",
+        "ean": "8595014602279",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101124",
-        "Description": "Marila Craft Medium 100g zrno",
-        "EANks": "8595014602842"
+        "id": "2101198",
+        "name": "Mokate Crema",
+        "ean": "8595014602262",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101125",
-        "Description": "Marila Craft Dark 100g zrno",
-        "EANks": "8595014602859"
+        "id": "2101197",
+        "name": "Mokate Espresso",
+        "ean": "8595014602255",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2101126",
-        "Description": "Marila single coffee 3 face",
-        "EANks": ""
+        "id": "2101196",
+        "name": "Mokate Crema",
+        "ean": "8595014602248",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2101127",
-        "Description": "Marila craft coffee 3 face",
-        "EANks": ""
+        "id": "3401140",
+        "name": "ST Oplatka 33g čokoládová",
+        "ean": "8595014602217",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101148",
-        "Description": "Káva MOKATE DELICATO 1kg*8",
-        "EANks": "5900649075719"
+        "id": "3401139",
+        "name": "ST Oplatka 33g DUO",
+        "ean": "8595014602200",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101149",
-        "Description": "Káva MOKATE ESPRESSO 500g*8",
-        "EANks": "5900649075610"
+        "id": "2101207",
+        "name": "KAWA ZIAR.Cafed'OrETHIOPIA",
+        "ean": "8595014602125",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2101150",
-        "Description": "Káva MOKATE ESPRESSO 1kg*8",
-        "EANks": "5900649075672"
+        "id": "2101206",
+        "name": "KAWA ZIAR.Cafed'Or BRAZIL",
+        "ean": "8595014602118",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2101151",
-        "Description": "NY Coffee Crema 1kg",
-        "EANks": "8594002835422"
+        "id": "2101195",
+        "name": "Turtle Ethiopia Sidamo 200g",
+        "ean": "8595014602088",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101152",
-        "Description": "NY Coffee Classic 1kg",
-        "EANks": "8594002835439"
+        "id": "2101194",
+        "name": "Turtle Ethiopia Sidamo 1000g",
+        "ean": "8595014602064",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101164",
-        "Description": "Standard zrno Espresso 1000g",
-        "EANks": "8594002839116"
+        "id": "2101193",
+        "name": "Marila MYANMAR 250g",
+        "ean": "8595014602040",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2101165",
-        "Description": "Marila Espresso 500g - ZLATÁ",
-        "EANks": "8594002837792"
+        "id": "2101192",
+        "name": "Marila ETHIOPIA KOKE 250g",
+        "ean": "8595014602026",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2101171",
-        "Description": "Mokate PRO 1000gCOFFE BAR",
-        "EANks": "8594033198336"
+        "id": "2101191",
+        "name": "Marila RWANDA 250g",
+        "ean": "8595014602002",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2101172",
-        "Description": "Mokate PRO 1000g EXCLUSIVE",
-        "EANks": "8594002839956"
+        "id": "2101190",
+        "name": "NYcoffee Crema",
+        "ean": "8595014601982",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101173",
-        "Description": "Mokate PRO 1000g HORECA",
-        "EANks": "8594002839932"
+        "id": "2101210",
+        "name": "Káva  MARIZZI NERO ",
+        "ean": "8595014601968",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101174",
-        "Description": "KawaTURTLE BRAZILIANO Minas1kg",
-        "EANks": "8595014601593"
+        "id": "2101209",
+        "name": "Káva MARIZZI AZZURRO ",
+        "ean": "8595014601883",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101175",
-        "Description": "Kawa TURTLE BRAZYLIA 1 kg",
-        "EANks": "8595014601609"
+        "id": "2101208",
+        "name": "Káva MARIZZI MARRONE",
+        "ean": "8595014601876",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101176",
-        "Description": "Kawa TURTLE D'ORO Selezione1kg",
-        "EANks": "8595014601616"
+        "id": "2101211",
+        "name": "Káva MARIZZI ROSSO ",
+        "ean": "8595014601869",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101177",
-        "Description": "Kawa TURTLE  PERU 1 kg",
-        "EANks": "8595014601623"
+        "id": "2101185",
+        "name": "Kawa TURTLE BARISTA Line",
+        "ean": "8595014601708",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101178",
-        "Description": "Kawa TURTLE  HONDURAS 1 kg",
-        "EANks": "8595014601630"
+        "id": "2101184",
+        "name": "Kawa TURTLE HONDURAS",
+        "ean": "8595014601692",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101179",
-        "Description": "Kawa TURTLE BARISTA Line 1 kg",
-        "EANks": "8595014601647"
+        "id": "2101183",
+        "name": "Kawa TURTLE  PERU",
+        "ean": "8595014601685",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101180",
-        "Description": "KawaTURTLE BRAZILIANO Mina200g",
-        "EANks": "8595014601654"
+        "id": "2101182",
+        "name": "Kawa TURTLE D'ORO Selezion",
+        "ean": "8595014601678",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101181",
-        "Description": "Kawa TURTLE BRAZYLIA 200g",
-        "EANks": "8595014601661"
+        "id": "2101181",
+        "name": "Kawa TURTLE BRAZYLIA",
+        "ean": "8595014601661",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101182",
-        "Description": "Kawa TURTLE D'ORO Selezion200g",
-        "EANks": "8595014601678"
+        "id": "2101180",
+        "name": "KawaTURTLE BRAZILIANO Mina",
+        "ean": "8595014601654",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "2101183",
-        "Description": "Kawa TURTLE  PERU 200g",
-        "EANks": "8595014601685"
+        "id": "2101179",
+        "name": "Kawa TURTLE BARISTA Line",
+        "ean": "8595014601647",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101184",
-        "Description": "Kawa TURTLE HONDURAS 200g",
-        "EANks": "8595014601692"
+        "id": "2101178",
+        "name": "Kawa TURTLE  HONDURAS",
+        "ean": "8595014601630",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101185",
-        "Description": "Kawa TURTLE BARISTA Line 200g",
-        "EANks": "8595014601708"
+        "id": "2101177",
+        "name": "Kawa TURTLE  PERU",
+        "ean": "8595014601623",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101190",
-        "Description": "NYcoffee Crema 1kg",
-        "EANks": "8595014601982"
+        "id": "2101176",
+        "name": "Kawa TURTLE D'ORO Selezione",
+        "ean": "8595014601616",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101191",
-        "Description": "Marila RWANDA 250g",
-        "EANks": "8595014602002"
+        "id": "2101175",
+        "name": "Kawa TURTLE BRAZYLIA",
+        "ean": "8595014601609",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101192",
-        "Description": "Marila ETHIOPIA KOKE 250g",
-        "EANks": "8595014602026"
+        "id": "2101174",
+        "name": "Kawa TURTLE BRAZILIANO Minas",
+        "ean": "8595014601593",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101193",
-        "Description": "Marila MYANMAR 250g",
-        "EANks": "8595014602040"
+        "id": "3513029",
+        "name": "ENJOY perník jahoda",
+        "ean": "8595014601579",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101194",
-        "Description": "Turtle Ethiopia Sidamo 1000g",
-        "EANks": "8595014602064"
+        "id": "3513028",
+        "name": "ENJOY perník švestka",
+        "ean": "8595014601555",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101195",
-        "Description": "Turtle Ethiopia Sidamo 200g",
-        "EANks": "8595014602088"
+        "id": "2211024",
+        "name": "ESPRESSO mletá/mielona",
+        "ean": "8595014601524",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2101196",
-        "Description": "Mokate Crema 500g 2023",
-        "EANks": "8595014602248"
+        "id": "2211022",
+        "name": "ORGANICO zrno/ziarno",
+        "ean": "8595014601517",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101197",
-        "Description": "Mokate Espresso 500g 2023",
-        "EANks": "8595014602255"
+        "id": "2211014",
+        "name": "SUPREMO zrno/ziarno",
+        "ean": "8595014601500",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101198",
-        "Description": "Mokate Crema 1kg  2023",
-        "EANks": "8595014602262"
+        "id": "3502024",
+        "name": "Perník borůvka",
+        "ean": "8595014600237",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101199",
-        "Description": "Mokate Espresso 1 kg  2023",
-        "EANks": "8595014602279"
+        "id": "3502016",
+        "name": "Perník Kohout",
+        "ean": "8595014600176",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101200",
-        "Description": "World Coffee Brazylia 200g",
-        "EANks": "8595014602415"
+        "id": "3502006",
+        "name": "Perník citrón",
+        "ean": "8595014600169",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101201",
-        "Description": "World Coffee Brazylia 1kg",
-        "EANks": "8595014602439"
+        "id": "3502008",
+        "name": "Perník višeň",
+        "ean": "8595014600152",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101206",
-        "Description": "KAWA ZIAR.Cafed'Or BRAZIL500g",
-        "EANks": "8595014602118"
+        "id": "3502015",
+        "name": "Perník KLUK",
+        "ean": "8595014600145",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101207",
-        "Description": "KAWA ZIAR.Cafed'OrETHIOPIA500g",
-        "EANks": "8595014602125"
+        "id": "3502017",
+        "name": "Perník Zajíc",
+        "ean": "8595014600121",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101208",
-        "Description": "Káva MARIZZI MARRONE1kg *8",
-        "EANks": "8595014601876"
+        "id": "3502020",
+        "name": "Perník rybízek",
+        "ean": "8595014600084",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101209",
-        "Description": "Káva MARIZZI AZZURRO 1kg *8",
-        "EANks": "8595014601883"
+        "id": "3502018",
+        "name": "Perník švestka",
+        "ean": "8595014600053",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101210",
-        "Description": "Káva  MARIZZI NERO 1kg *8",
-        "EANks": "8595014601968"
+        "id": "3502025",
+        "name": "Perník jahůdka",
+        "ean": "8595014600015",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2101211",
-        "Description": "Káva MARIZZI ROSSO 1kg *8",
-        "EANks": "8595014601869"
+        "id": "3401107",
+        "name": "Hi oplatky nugátové máčené",
+        "ean": "8594033199982",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "2101212",
-        "Description": "Juta Świąteczna edycja 1kg",
-        "EANks": "8595014602934"
+        "id": "2101030",
+        "name": "Marila káva Horeca 1kg beans",
+        "ean": "8594033199807",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2101216",
-        "Description": "Cavarious Kawa ziarnista 500g",
-        "EANks": "5906079501224"
+        "id": "3401011",
+        "name": "Hi Wafers chocolat",
+        "ean": "8594033199791",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101217",
-        "Description": "Craft ETIOPIA SIDAMO 400g",
-        "EANks": "8595014603030"
+        "id": "3401010",
+        "name": "Hi Wafers hazelnut",
+        "ean": "8594033199784",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2101218",
-        "Description": "Craft BRASIL MOGIANA 400g",
-        "EANks": "8595014603054"
+        "id": "2101053",
+        "name": "MP Crema Intensa",
+        "ean": "8594033199739",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2114009",
-        "Description": "Káva zrno 70g (50 ks)",
-        "EANks": "8594002830106"
+        "id": "2101051",
+        "name": "MP Crema Delicado",
+        "ean": "8594033199715",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2114010",
-        "Description": "Káva zrnko 20x70g",
-        "EANks": "8594002830106"
+        "id": "2101052",
+        "name": "MP Crema Intensa",
+        "ean": "8594033199692",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2114021",
-        "Description": "Kawa Prestige 500g HoReCa ml.",
-        "EANks": "8594002837280"
+        "id": "2101050",
+        "name": "MP Crema Delicado",
+        "ean": "8594033199678",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2114024",
-        "Description": "Turtle Sidamo 1kg + mlýnek",
-        "EANks": "8595014602781"
+        "id": "3400904",
+        "name": "FL oplatka lískooříšková",
+        "ean": "8594033199647",
+        "variants": "false",
+        "gram": "36"
     },
     {
-        "ItemNo": "2201003",
-        "Description": "Káva mletý Standard 70g /60ks",
-        "EANks": "8594002830113"
+        "id": "3400905",
+        "name": "FL oplatka čokoláda",
+        "ean": "8594033199630",
+        "variants": "false",
+        "gram": "36"
     },
     {
-        "ItemNo": "2201004",
-        "Description": "Káva mletý Standard 100g",
-        "EANks": "8594002830151"
+        "id": "3401023",
+        "name": "Marilky griliášové ",
+        "ean": "8594033199210",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "2201005",
-        "Description": "Káva mletý Standard 150g /40ks",
-        "EANks": "8594033190071"
+        "id": "3401090",
+        "name": "Oplatka FRESH čokoláda",
+        "ean": "8594033198633",
+        "variants": "false",
+        "gram": "36"
     },
     {
-        "ItemNo": "2201006",
-        "Description": "Káva mletý Standard 250g",
-        "EANks": "8594002830205"
+        "id": "3401089",
+        "name": "Oplatka FRESH lískooříšek",
+        "ean": "8594033198626",
+        "variants": "false",
+        "gram": "36"
     },
     {
-        "ItemNo": "2201008",
-        "Description": "Káva mletý Standard 500g",
-        "EANks": "8594002830090"
+        "id": "3014022",
+        "name": "ARO Dětské piškoty",
+        "ean": "8594033198480",
+        "variants": "false",
+        "gram": "240"
     },
     {
-        "ItemNo": "2201010",
-        "Description": "Káva mletý Standard 1000g",
-        "EANks": "8594002830618"
+        "id": "3014021",
+        "name": "ARO Dětské piškoty",
+        "ean": "8594033198466",
+        "variants": "false",
+        "gram": "120"
     },
     {
-        "ItemNo": "2201019",
-        "Description": "Standard 70g mletý RETRO",
-        "EANks": "8594002837716"
+        "id": "2101028",
+        "name": "Kawa COFFEE BAR ziarno",
+        "ean": "8594033198336",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2201020",
-        "Description": "RETRO Káva Standard mletá 1kg",
-        "EANks": "8594002838188"
+        "id": "2101171",
+        "name": "Mokate PRO COFFE BAR",
+        "ean": "8594033198336",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2201212",
-        "Description": "Káva Standard vakuovaná 250g",
-        "EANks": "8594033193522"
+        "id": "3010004",
+        "name": "Piškoty Clever",
+        "ean": "8594033198220",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2201216",
-        "Description": "Káva mletá 70g (40 ks)",
-        "EANks": "8594002830113"
+        "id": "3001061",
+        "name": "Marila piškoty",
+        "ean": "8594033198206",
+        "variants": "false",
+        "gram": "300"
     },
     {
-        "ItemNo": "2201217",
-        "Description": "Marila Espresso 250g vacuum",
-        "EANks": "8594002838119"
+        "id": "3401127",
+        "name": "Marilky lískooříškové",
+        "ean": "8594033197902",
+        "variants": "false",
+        "gram": "140"
     },
     {
-        "ItemNo": "2201219",
-        "Description": "Marila Ethiopia 250g vacuum",
-        "EANks": "8594002839222"
+        "id": "3401126",
+        "name": "Marilky Black čokoládové",
+        "ean": "8594033197568",
+        "variants": "false",
+        "gram": "140"
     },
     {
-        "ItemNo": "2201220",
-        "Description": "Marila Brazil 250g vacuum",
-        "EANks": "8594002839246"
+        "id": "3401128",
+        "name": "Marilky citrónové",
+        "ean": "8594033197520",
+        "variants": "false",
+        "gram": "140"
     },
     {
-        "ItemNo": "2202005",
-        "Description": "Káva MS 1 kg",
-        "EANks": "8594002830618"
+        "id": "2206050",
+        "name": "Cafe Crema mletá (ground)",
+        "ean": "8594033196585",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2202017",
-        "Description": "Káva mletý Standard 150g/16ks",
-        "EANks": "8594033190071"
+        "id": "2206052",
+        "name": "Cafe Crema mletá (ground)",
+        "ean": "8594033196493",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2202027",
-        "Description": "Káva COOP Nový den Stand. 150g",
-        "EANks": "8594002838614"
+        "id": "2101005",
+        "name": "Káva Cafe Crema (beans)",
+        "ean": "8594033195502",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2202028",
-        "Description": "Káva COOP Nový den Extra 100g",
-        "EANks": "8594002838621"
+        "id": "2101012",
+        "name": "Káva Cafe Crema  (beans)",
+        "ean": "8594033195199",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "2202029",
-        "Description": "Káva COOP Nový den 250g vakuov",
-        "EANks": "8594002838638"
+        "id": "3401027",
+        "name": "Marilky lískooříškové",
+        "ean": "8594033194970",
+        "variants": "true",
+        "gram": "36"
     },
     {
-        "ItemNo": "2202030",
-        "Description": "Káva COOP ND Espresso zrno500g",
-        "EANks": "8594002838645"
+        "id": "3401026",
+        "name": "Marilky čokoládové",
+        "ean": "8594033194963",
+        "variants": "true",
+        "gram": "36"
     },
     {
-        "ItemNo": "2206003",
-        "Description": "Ml.St.káva 250g-stojící, 12ks",
-        "EANks": "8594002830205"
+        "id": "2201212",
+        "name": "Káva Standard vakuovaná",
+        "ean": "8594033193522",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "2206004",
-        "Description": "Ml.St.káva 500g-stojící9ks",
-        "EANks": "8594002830090"
+        "id": "3502023",
+        "name": "Perník meruňka",
+        "ean": "8594033192853",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2206008",
-        "Description": "Ml.St. káva100g-stojící, 34ks",
-        "EANks": "8594002830151"
+        "id": "3502009",
+        "name": "Perník malina",
+        "ean": "8594033192846",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2206049",
-        "Description": "Cafe Crema 100g mletá /ground/",
-        "EANks": "8594007000238"
+        "id": "3001050",
+        "name": "Marila piškoty",
+        "ean": "8594033192082",
+        "variants": "false",
+        "gram": "240"
     },
     {
-        "ItemNo": "2206050",
-        "Description": "Cafe Crema 250g mletá (ground)",
-        "EANks": "8594033196585"
+        "id": "2201005",
+        "name": "Káva mletý Standard",
+        "ean": "8594033190071",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "2206052",
-        "Description": "Cafe Crema 500g mletá (ground)",
-        "EANks": "8594033196493"
+        "id": "2206049",
+        "name": "Cafe Crema mletá /ground/",
+        "ean": "8594007000238",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "2211014",
-        "Description": "SUPREMO 1kg zrno/ziarno",
-        "EANks": "8595014601500"
+        "id": "2216000",
+        "name": "Marila kakao holandské",
+        "ean": "8594006985390",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "2211022",
-        "Description": "ORGANICO 1kg zrno/ziarno",
-        "EANks": "8595014601517"
+        "id": "2101172",
+        "name": "Mokate PRO EXCLUSIVE",
+        "ean": "8594002839956",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2211024",
-        "Description": "ESPRESSO 250g mletá/mielona",
-        "EANks": "8595014601524"
+        "id": "2101173",
+        "name": "Mokate PRO HORECA",
+        "ean": "8594002839932",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "2211043",
-        "Description": "NYC Dark ground 225g",
-        "EANks": "8594002839499"
+        "id": "3519039",
+        "name": "Sandwich GANG švestka ",
+        "ean": "8594002839857",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2211044",
-        "Description": "NYC Medium ground 225g",
-        "EANks": "8594002839475"
+        "id": "3519040",
+        "name": "Sandwich GANG meruňka",
+        "ean": "8594002839840",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "2211045",
-        "Description": "NYC Dark ground 225g CHEP",
-        "EANks": "8594002839499"
+        "id": "3400903",
+        "name": "Oplatka STAVMAT oříšková ",
+        "ean": "8594002839536",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "2211046",
-        "Description": "NYC Medium ground 225g CHEP",
-        "EANks": "8594002839475"
+        "id": "3513030",
+        "name": "FL Perník Mikuláš ",
+        "ean": "8594002839512",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2211047",
-        "Description": "NYC Dark ground 225g / PL",
-        "EANks": "8594002839499"
+        "id": "2211043",
+        "name": "NYC Dark ground ",
+        "ean": "8594002839499",
+        "variants": "false",
+        "gram": "225"
     },
     {
-        "ItemNo": "2211048",
-        "Description": "NYC Medium ground 225g/ PL",
-        "EANks": "8594002839475"
+        "id": "2211044",
+        "name": "NYC Medium ground ",
+        "ean": "8594002839475",
+        "variants": "false",
+        "gram": "225"
     },
     {
-        "ItemNo": "2211049",
-        "Description": "Coffee by BONATIUM 500g ground",
-        "EANks": "5908288962797"
+        "id": "3513008",
+        "name": "FL perník meruňka",
+        "ean": "8594002839420",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2214010",
-        "Description": "Káva mletý Standard  20x70g",
-        "EANks": "8594002830113"
+        "id": "3513007",
+        "name": "FL perník jahoda ",
+        "ean": "8594002839413",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2214090",
-        "Description": "Káva mletý Standard 70g/ 80ks",
-        "EANks": "8594002830113"
+        "id": "3513006",
+        "name": "FL perník švestka ",
+        "ean": "8594002839406",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2214093",
-        "Description": "Clever mletá káva 150g",
-        "EANks": "8594002834203"
+        "id": "3513005",
+        "name": "FL perník malina ",
+        "ean": "8594002839390",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "2216000",
-        "Description": "Marila kakao holandské 22x100g",
-        "EANks": "8594006985390"
+        "id": "3404047",
+        "name": "ST Dita mléčná ",
+        "ean": "8594002839260",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "2216002",
-        "Description": "My Price Cocoa powder 100g",
-        "EANks": "4306188018636"
+        "id": "2201220",
+        "name": "Marila Brazil  vacuum",
+        "ean": "8594002839246",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "3001000",
-        "Description": "Marila piškoty 120g",
-        "EANks": "8594002832599"
+        "id": "2201219",
+        "name": "Marila Ethiopia  vacuum",
+        "ean": "8594002839222",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "3001004",
-        "Description": "Dětské piškoty 120g RETRO",
-        "EANks": "8594002837693"
+        "id": "3400879",
+        "name": "CLEVER celom.čokoládová",
+        "ean": "8594002839178",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3001050",
-        "Description": "Marila piškoty 240g",
-        "EANks": "8594033192082"
+        "id": "3400880",
+        "name": "CLEVER celom.lískooříšková",
+        "ean": "8594002839161",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3001057",
-        "Description": "Piškoty Tastino 250g LIDL",
-        "EANks": "4056489064176"
+        "id": "2101164",
+        "name": "Standard zrno Espresso",
+        "ean": "8594002839116",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "3001059",
-        "Description": "ALB Piškoty dětské 120g",
-        "EANks": "8590421053294"
+        "id": "3401130",
+        "name": "Marilky Peanut Butter ",
+        "ean": "8594002839048",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3001060",
-        "Description": "ALB MAXI Piškoty dětské 240g",
-        "EANks": "8590421053300"
+        "id": "3400881",
+        "name": "Marilka GOLD čokoládová",
+        "ean": "8594002838935",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3001061",
-        "Description": "Marila piškoty 300g",
-        "EANks": "8594033198206"
+        "id": "3400882",
+        "name": "Marilka GOLD DUO",
+        "ean": "8594002838911",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3001062",
-        "Description": "TS Sponge Biscuits 240g",
-        "EANks": "5051007158602"
+        "id": "3400883",
+        "name": "Marilka GOLD mléčná",
+        "ean": "8594002838898",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3001063",
-        "Description": "TS Sponge Biscuits 480g",
-        "EANks": "5051007158619"
+        "id": "3404045",
+        "name": "ST nugátové ",
+        "ean": "8594002838836",
+        "variants": "false",
+        "gram": "140"
     },
     {
-        "ItemNo": "3001064",
-        "Description": "Piškoty Tastino 120g LIDL",
-        "EANks": "4056489724797"
+        "id": "3404044",
+        "name": "ST lískooříškové ",
+        "ean": "8594002838812",
+        "variants": "false",
+        "gram": "140"
     },
     {
-        "ItemNo": "3001065",
-        "Description": "Piškoty TASTINO 350g XXL",
-        "EANks": "4056489909002"
+        "id": "3404043",
+        "name": "KLASIK oplatka oříšk",
+        "ean": "8594002838775",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3010004",
-        "Description": "Piškoty Clever 250g",
-        "EANks": "8594033198220"
+        "id": "3404042",
+        "name": "KLASIK oplatka arašíd",
+        "ean": "8594002838751",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3014020",
-        "Description": "Piškoty ARO 500g",
-        "EANks": "8594002832988"
+        "id": "2202030",
+        "name": "Káva COOP ND Espresso zrno",
+        "ean": "8594002838645",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3014021",
-        "Description": "ARO Dětské piškoty 16X120G",
-        "EANks": "8594033198466"
+        "id": "2202029",
+        "name": "Káva COOP Nový den  vakuov",
+        "ean": "8594002838638",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "3014022",
-        "Description": "ARO Dětské piškoty 10X240G",
-        "EANks": "8594033198480"
+        "id": "2202028",
+        "name": "Káva COOP Nový den Extra ",
+        "ean": "8594002838621",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "3201151",
-        "Description": "Kakao Holenderskie 200g",
-        "EANks": "8594002836696"
+        "id": "2202027",
+        "name": "Káva COOP Nový den Standart",
+        "ean": "8594002838614",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3400874",
-        "Description": "Tesco Wafer Milk 45gRSPO&RA MB",
-        "EANks": "5051007158626"
+        "id": "3400978",
+        "name": "CLEVER oplatka čokoládová",
+        "ean": "8594002838560",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400879",
-        "Description": "CLEVER celom.čokolád40gRSPO&RA MB",
-        "EANks": "8594002839178"
+        "id": "3400979",
+        "name": "CLEVER oplat.lískoříšková",
+        "ean": "8594002838546",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400880",
-        "Description": "CLEVER celom.lískooř 40gRSPO&RA MB",
-        "EANks": "8594002839161"
+        "id": "4001188",
+        "name": "Cookies+ peanuts ",
+        "ean": "8594002838485",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3400881",
-        "Description": "Marilka GOLD čokolád.45gRSPO&RA MB",
-        "EANks": "8594002838935"
+        "id": "3401125",
+        "name": "EASY Black DUO ",
+        "ean": "8594002838461",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400882",
-        "Description": "Marilka GOLD DUO 45gRSPO&RA MB",
-        "EANks": "8594002838911"
+        "id": "3401124",
+        "name": "EASY Black mleczny ",
+        "ean": "8594002838447",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400883",
-        "Description": "Marilka GOLD mléčná 45gRSPO&RA MB",
-        "EANks": "8594002838898"
+        "id": "3401123",
+        "name": "EASY Black czekol ",
+        "ean": "8594002838423",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400884",
-        "Description": "Turistky čokoládové 45gRSPO&RA MB",
-        "EANks": "8590421047675"
+        "id": "2201020",
+        "name": "RETRO Káva Standard mletá",
+        "ean": "8594002838188",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "3400885",
-        "Description": "Turistky arašídové 45gRSPO&RA MB",
-        "EANks": "8590421047668"
+        "id": "2201217",
+        "name": "Marila Espresso  vacuum",
+        "ean": "8594002838119",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "3400886",
-        "Description": "Turistky oříškové 45gRSPO&RA MB",
-        "EANks": "8590421047651"
+        "id": "3401117",
+        "name": "Marilky Black nugát ",
+        "ean": "8594002838041",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400903",
-        "Description": "Oplatka STAVMAToříšková 47gRSPO&RA MB",
-        "EANks": "8594002839536"
+        "id": "3401116",
+        "name": "Marilky Black DUO ",
+        "ean": "8594002838027",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400904",
-        "Description": "FL oplatka lískooř.36gRSPO&RA MB",
-        "EANks": "8594033199647"
+        "id": "3401115",
+        "name": "Marilky Black mléčná",
+        "ean": "8594002838003",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400905",
-        "Description": "FL oplatka čokoláda 36gRSPO&RA MB",
-        "EANks": "8594033199630"
+        "id": "3401114",
+        "name": "Marilky Black čokoládové",
+        "ean": "8594002837983",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400906",
-        "Description": "TS Oplatka mléčná 47gRSPO&RA MB",
-        "EANks": "5051007168298"
+        "id": "2101116",
+        "name": "BIO Coffee PERU",
+        "ean": "8594002837969",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400907",
-        "Description": "TS Oplatka čokoláda 47gRSPO&RA MB",
-        "EANks": "5051007168281"
+        "id": "2101115",
+        "name": "BIO Coffee HONDURAS",
+        "ean": "8594002837945",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400908",
-        "Description": "TS Oplatka lískooř 47gRSPO&RA MB",
-        "EANks": "5051007168274"
+        "id": "2101114",
+        "name": "Marila Crema zrno ZLATÁ",
+        "ean": "8594002837808",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400909",
-        "Description": "TS Oplatka arašída 47gRSPO&RA MB",
-        "EANks": "5051007168304"
+        "id": "2101113",
+        "name": "Marila Espresso",
+        "ean": "8594002837792",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400977",
-        "Description": "KITBIS oplatka lískoo40gRSPO&RA MB",
-        "EANks": "8590421052723"
+        "id": "2101112",
+        "name": "Marila Craft Dark zrno",
+        "ean": "8594002837785",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400978",
-        "Description": "CLEVER oplatka čokol 40gRSPO&RA MB",
-        "EANks": "8594002838560"
+        "id": "2101111",
+        "name": "Marila Craft Medium  zrno",
+        "ean": "8594002837778",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400979",
-        "Description": "CLEVER oplat.lískoř.40gRSPO&RA MB",
-        "EANks": "8594002838546"
+        "id": "2101110",
+        "name": "Marila Craft Blonde  zrno",
+        "ean": "8594002837761",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400980",
-        "Description": "Hi Wafers griliash 40gRSPO&RA MB",
-        "EANks": "8594002836658"
+        "id": "2201019",
+        "name": "Standard mletý RETRO",
+        "ean": "8594002837716",
+        "variants": "false",
+        "gram": "70"
     },
     {
-        "ItemNo": "3400981",
-        "Description": "Marilky čokoládové 40gRSPO&RA MB",
-        "EANks": "8594002837310"
+        "id": "3001004",
+        "name": "Dětské piškoty RETRO",
+        "ean": "8594002837693",
+        "variants": "false",
+        "gram": "120"
     },
     {
-        "ItemNo": "3400982",
-        "Description": "Marilky lískooříš.40gRSPO&RA MB",
-        "EANks": "8594002837334"
+        "id": "3400999",
+        "name": "Marilky smetanové  RETRO",
+        "ean": "8594002837624",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400983",
-        "Description": "Marilky nugátové 40gRSPO&RA MB",
-        "EANks": "8594002837358"
+        "id": "3400998",
+        "name": "Marilky nugátové RETRO",
+        "ean": "8594002837617",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400984",
-        "Description": "Marilky smet. příchuť40gRSPO&RA MB",
-        "EANks": "8594002837372"
+        "id": "3400997",
+        "name": "Marilky griliášRETRO",
+        "ean": "8594002837600",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400985",
-        "Description": "Marilky arašídové 40gRSPO&RA MB",
-        "EANks": "8594002837396"
+        "id": "3400995",
+        "name": "Marilky lískooříškovéRETRO",
+        "ean": "8594002837594",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400986",
-        "Description": "Marilky přích vaj.koň40gRSPO&RA MB",
-        "EANks": "8595014602378"
+        "id": "3400994",
+        "name": "Marilky čokoládové RETRO",
+        "ean": "8594002837587",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400987",
-        "Description": "Marilky příchuť višeň40gRSPO&RA MB",
-        "EANks": "8595014602385"
+        "id": "3400996",
+        "name": "Marilky arašídové RETRO",
+        "ean": "8594002837570",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3400992",
-        "Description": "Marilky nugátové 47gRSPO&RA MB",
-        "EANks": "8594002836870"
+        "id": "3400985",
+        "name": "Marilky arašídové",
+        "ean": "8594002837396",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400993",
-        "Description": "Marilky smet.příchuť47gRSPO&RA MB",
-        "EANks": "8594002836887"
+        "id": "3400984",
+        "name": "Marilky smetanové",
+        "ean": "8594002837372",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400994",
-        "Description": "Marilky čokoládové 47g RETRORSPO&RA MB",
-        "EANks": "8594002837587"
+        "id": "3400983",
+        "name": "Marilky nugátové ",
+        "ean": "8594002837358",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400995",
-        "Description": "Marilky lískooříškové47g RETRORSPO&RA MB",
-        "EANks": "8594002837594"
+        "id": "3400982",
+        "name": "Marilky lískooříškové",
+        "ean": "8594002837334",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400996",
-        "Description": "Marilky arašídové 47g RETRORSPO&RA MB",
-        "EANks": "8594002837570"
+        "id": "3400981",
+        "name": "Marilky čokoládové ",
+        "ean": "8594002837310",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3400997",
-        "Description": "Marilky griliáš 47g RETRORSPO&RA MB",
-        "EANks": "8594002837600"
+        "id": "2114021",
+        "name": "Kawa Prestige HoReCa ml.",
+        "ean": "8594002837280",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3400998",
-        "Description": "Marilky nugátové 47g RETRORSPO&RA MB",
-        "EANks": "8594002837617"
+        "id": "4001700",
+        "name": "EASY Wafer lemon ",
+        "ean": "8594002837235",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3400999",
-        "Description": "Marilky smetanové 47g RETRORSPO&RA MB",
-        "EANks": "8594002837624"
+        "id": "4001699",
+        "name": "EASY Wafer milky ",
+        "ean": "8594002837211",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3401004",
-        "Description": "Wafle EASY mleczny 47gRSPO&RA MB",
-        "EANks": "8594002835835"
+        "id": "4001698",
+        "name": "EASY Wafer choco ",
+        "ean": "8594002837198",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3401008",
-        "Description": "Wafle EASY orzech47gRSPO&RA MB",
-        "EANks": "8594002834142"
+        "id": "3400993",
+        "name": "Marilky smet.příchuť",
+        "ean": "8594002836887",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401009",
-        "Description": "Wafle EASY czeko47gRSPO&RA MB",
-        "EANks": "8594002834135"
+        "id": "3400992",
+        "name": "Marilky nugátové ",
+        "ean": "8594002836870",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401010",
-        "Description": "Hi Wafers hazelnu40gRSPO&RA MB",
-        "EANks": "8594033199784"
+        "id": "3201151",
+        "name": "Kakao Holenderskie ",
+        "ean": "8594002836696",
+        "variants": "false",
+        "gram": "200"
     },
     {
-        "ItemNo": "3401011",
-        "Description": "Hi Wafers chocolat40gRSPO&RA MB",
-        "EANks": "8594033199791"
+        "id": "3400980",
+        "name": "Hi Wafers griliash ",
+        "ean": "8594002836658",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3401023",
-        "Description": "Marilky griliášové 47gRSPO&RA MB",
-        "EANks": "8594033199210"
+        "id": "4001644",
+        "name": "YourSize HARD caramel",
+        "ean": "8594002836610",
+        "variants": "false",
+        "gram": "55"
     },
     {
-        "ItemNo": "3401026",
-        "Description": "Marilky čokoládové 36gRSPO&RA MB",
-        "EANks": "8594033194963"
+        "id": "4001643",
+        "name": "YourSize HARD ořech/čok",
+        "ean": "8594002836573",
+        "variants": "false",
+        "gram": "55"
     },
     {
-        "ItemNo": "3401027",
-        "Description": "Marilky lískooříšk.36gRSPO&RA MB",
-        "EANks": "8594033194970"
+        "id": "4001466",
+        "name": "Cookies selection ",
+        "ean": "8594002836481",
+        "variants": "false",
+        "gram": "260"
     },
     {
-        "ItemNo": "3401030",
-        "Description": "Marilky arašídové 47gRSPO&RA MB",
-        "EANks": "8594002832636"
+        "id": "3401004",
+        "name": "Wafle EASY mleczny",
+        "ean": "8594002835835",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401031",
-        "Description": "Marilky čokoládové 47gRSPO&RA MB",
-        "EANks": "8594002832629"
+        "id": "2101093",
+        "name": "Káva NY SCURO (beans)",
+        "ean": "8594002835439",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401032",
-        "Description": "Marilky lískooříškové47gRSPO&RA MB",
-        "EANks": "8594002832612"
+        "id": "2101094",
+        "name": "Káva NY MARRONE(beans)",
+        "ean": "8594002835422",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401033",
-        "Description": "Marilky Sněhul lísko36gRSPO&RA MB",
-        "EANks": "8594033194970"
+        "id": "4001171",
+        "name": "Cookies Dark choco ",
+        "ean": "8594002835200",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401034",
-        "Description": "Marilky Velikonoční  lísko.36gRSPO&RA MB",
-        "EANks": "8594033194970"
+        "id": "4001419",
+        "name": "Rings Sunshine ",
+        "ean": "8594002834715",
+        "variants": "false",
+        "gram": "160"
     },
     {
-        "ItemNo": "3401035",
-        "Description": "Marilky Velikonoční  čoko. 36gRSPO&RA MB",
-        "EANks": "8594033194963"
+        "id": "4001181",
+        "name": "Rings raspbfilling",
+        "ean": "8594002834692",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401036",
-        "Description": "Marilky Sněhulák čoko36gRSPO&RA MB",
-        "EANks": "8594033194963"
+        "id": "4001176",
+        "name": "Rings rasp+darkchoco",
+        "ean": "8594002834685",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401089",
-        "Description": "Oplatka FRESH lískooříšek36gRSPO&RA MB",
-        "EANks": "8594033198626"
+        "id": "4001180",
+        "name": "Rings dark choco ",
+        "ean": "8594002834678",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401090",
-        "Description": "Oplatka FRESH čokoláda 36gRSPO&RA MB",
-        "EANks": "8594033198633"
+        "id": "4001185",
+        "name": "Cookies peanutschoco",
+        "ean": "8594002834654",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401107",
-        "Description": "Hi oplatky nugátové 33g máčené",
-        "EANks": "8594033199982"
+        "id": "4001178",
+        "name": "Cookies pieceschoco",
+        "ean": "8594002834630",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401114",
-        "Description": "Marilky Black čokol.33gRSPO&RA MB",
-        "EANks": "8594002837983"
+        "id": "2214093",
+        "name": "Clever mletá káva",
+        "ean": "8594002834203",
+        "variants": "false",
+        "gram": "150"
     },
     {
-        "ItemNo": "3401115",
-        "Description": "Marilky Black mléčná33gRSPO&RA MB",
-        "EANks": "8594002838003"
+        "id": "3401008",
+        "name": "Wafle EASY orzech",
+        "ean": "8594002834142",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401116",
-        "Description": "Marilky Black DUO 33gRSPO&RA MB",
-        "EANks": "8594002838027"
+        "id": "3401009",
+        "name": "Wafle EASY czeko",
+        "ean": "8594002834135",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401117",
-        "Description": "Marilky Black nugát 33gRSPO&RA MB",
-        "EANks": "8594002838041"
+        "id": "2101070",
+        "name": "Marila káva Colombia zrno",
+        "ean": "8594002834043",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401123",
-        "Description": "EASY Black czekol 33gRSPO&RA MB",
-        "EANks": "8594002838423"
+        "id": "2101071",
+        "name": "Marila káva Ethiopia zrno",
+        "ean": "8594002834029",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401124",
-        "Description": "EASY Black mleczny 33gRSPO&RA MB",
-        "EANks": "8594002838447"
+        "id": "2101072",
+        "name": "Marila káva Brazil zrno ",
+        "ean": "8594002834005",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401125",
-        "Description": "EASY Black DUO 33gRSPO&RA MB",
-        "EANks": "8594002838461"
+        "id": "3014020",
+        "name": "Piškoty ARO",
+        "ean": "8594002832988",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401126",
-        "Description": "Marilky Black čokol.140gRSPO&RA MB",
-        "EANks": "8594033197568"
+        "id": "3401030",
+        "name": "Marilky arašídové ",
+        "ean": "8594002832636",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401127",
-        "Description": "Marilky lískooříš.140gRSPO&RA MB",
-        "EANks": "8594033197902"
+        "id": "3401031",
+        "name": "Marilky čokoládové ",
+        "ean": "8594002832629",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401128",
-        "Description": "Marilky citrónové 140gRSPO MB",
-        "EANks": "8594033197520"
+        "id": "3401032",
+        "name": "Marilky lískooříškové",
+        "ean": "8594002832612",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3401130",
-        "Description": "Marilky Peanut Butter 33gRSPO MB",
-        "EANks": "8594002839048"
+        "id": "3001000",
+        "name": "Marila piškoty",
+        "ean": "8594002832599",
+        "variants": "false",
+        "gram": "120"
     },
     {
-        "ItemNo": "3401136",
-        "Description": "TEREZKA přích.citrón 33gRSPO&RA MB",
-        "EANks": "4056489725305"
+        "id": "2201010",
+        "name": "Káva mletý Standard ",
+        "ean": "8594002830618",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "3401137",
-        "Description": "TEREZKA čokolád.33gRSPO&RA MB",
-        "EANks": "4056489725312"
+        "id": "2201006",
+        "name": "Káva mletý Standard",
+        "ean": "8594002830205",
+        "variants": "false",
+        "gram": "250"
     },
     {
-        "ItemNo": "3401138",
-        "Description": "TEREZKA oplat mléčná 33gRSPO&RA MB",
-        "EANks": "4056489725329"
+        "id": "2201004",
+        "name": "Káva mletý Standard",
+        "ean": "8594002830151",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "3401139",
-        "Description": "ST Oplatka 33g DUORSPO&RA MB",
-        "EANks": "8595014602200"
+        "id": "2201003",
+        "name": "Káva mletý Standard ",
+        "ean": "8594002830113",
+        "variants": "false",
+        "gram": "70"
     },
     {
-        "ItemNo": "3401140",
-        "Description": "ST Oplatka 33g čokolád.RSPO&RA MB",
-        "EANks": "8595014602217"
+        "id": "2101001",
+        "name": "Káva standard směs zrno",
+        "ean": "8594002830106",
+        "variants": "false",
+        "gram": "70"
     },
     {
-        "ItemNo": "3401141",
-        "Description": "HI Easy coffee 33gRSPO MB",
-        "EANks": "8595014602330"
+        "id": "2201008",
+        "name": "Káva mletý Standard ",
+        "ean": "8594002830090",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3401142",
-        "Description": "HI Easy hazelnut 33gRSPO&RA MB",
-        "EANks": "8595014602347"
+        "id": "3513034",
+        "name": "Perník KITBIS malina",
+        "ean": "8590421069349",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3401143",
-        "Description": "TEREZKA oplat.oříšk 33gRSPO&RA MB",
-        "EANks": "4056489911425"
+        "id": "3513033",
+        "name": "Perník KITBIS borůvka",
+        "ean": "8590421069332",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3401144",
-        "Description": "TEREZKA Peanut butter33gRSPO&RA MB",
-        "EANks": "4056489911418"
+        "id": "3513032",
+        "name": "Perník KITBIS jahoda",
+        "ean": "8590421069325",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3401145",
-        "Description": "Opl.Black čoko s proteinem 33gRSPO&RA MB",
-        "EANks": "8595014602606"
+        "id": "3513031",
+        "name": "Perník KITBIS švestka",
+        "ean": "8590421069318",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3401146",
-        "Description": "Oplatka mléčná s proteinem 33gRSPO&RA MB",
-        "EANks": "8595014602613"
+        "id": "3001060",
+        "name": "ALB MAXI Piškoty dětské",
+        "ean": "8590421053300",
+        "variants": "false",
+        "gram": "240"
     },
     {
-        "ItemNo": "3401147",
-        "Description": "Marilky kokos 47gRSPO&RA MB",
-        "EANks": "8595014602989"
+        "id": "3001059",
+        "name": "ALB Piškoty dětské",
+        "ean": "8590421053294",
+        "variants": "false",
+        "gram": "120"
     },
     {
-        "ItemNo": "3401148",
-        "Description": "SCOUTY čokoládová 47gRSPO&RA MB",
-        "EANks": "4335619060852"
+        "id": "3400977",
+        "name": "KITBIS oplatka lískoo",
+        "ean": "8590421052723",
+        "variants": "false",
+        "gram": "40"
     },
     {
-        "ItemNo": "3401149",
-        "Description": "SCOUTY lískooříšková 47gRSPO&RA MB",
-        "EANks": "4335619060869"
+        "id": "3400884",
+        "name": "Turistky čokoládové ",
+        "ean": "8590421047675",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3401150",
-        "Description": "SCOUTY mléčné 47gRSPO&RA MB",
-        "EANks": "4335619060876"
+        "id": "3400885",
+        "name": "Turistky arašídové ",
+        "ean": "8590421047668",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3401151",
-        "Description": "SCOUTY kokosové 47gRSPO&RA MB",
-        "EANks": "4335619060883"
+        "id": "3400886",
+        "name": "Turistky oříškové ",
+        "ean": "8590421047651",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3401152",
-        "Description": "TEREZKA čokolád.33g SKRSPO&RA MB",
-        "EANks": "4056489725312"
+        "id": "3516073",
+        "name": "Perník TERKA čučoriedka",
+        "ean": "8586023530745",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3404042",
-        "Description": "KLASIK oplatka arašíd47gRSPO&RA MB",
-        "EANks": "8594002838751"
+        "id": "3516072",
+        "name": "Perník TERKA slivka",
+        "ean": "8586023530738",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3404043",
-        "Description": "KLASIK oplatka oříšk 47gRSPO&RA MB",
-        "EANks": "8594002838775"
+        "id": "2211049",
+        "name": "Coffee by BONATIUM ground",
+        "ean": "5908288962797",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3404044",
-        "Description": "ST lískooříškové 140gRSPO&RA MB",
-        "EANks": "8594002838812"
+        "id": "4001246",
+        "name": "Cookies Sunshine",
+        "ean": "5906190554772",
+        "variants": "false",
+        "gram": "160"
     },
     {
-        "ItemNo": "3404045",
-        "Description": "ST nugátové 140gRSPO&RA MB",
-        "EANks": "8594002838836"
+        "id": "2101216",
+        "name": "Cavarious Kawa ziarnista",
+        "ean": "5906079501224",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3404047",
-        "Description": "ST Dita mléčná 45gRSPO&RA MB",
-        "EANks": "8594002839260"
+        "id": "2101148",
+        "name": "Káva MOKATE DELICATO ",
+        "ean": "5900649075719",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "3501999",
-        "Description": "Perník ovocný 60g x 72RSPO&RA MB",
-        "EANks": "8595014602484"
+        "id": "2101150",
+        "name": "Káva MOKATE ESPRESSO",
+        "ean": "5900649075672",
+        "variants": "false",
+        "gram": "1000"
     },
     {
-        "ItemNo": "3502000",
-        "Description": "Perník Mikulášská nadílka 60gRSPO&RA MB",
-        "EANks": "8595014610281"
+        "id": "2101149",
+        "name": "Káva MOKATE ESPRESSO 500g",
+        "ean": "5900649075610",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3502001",
-        "Description": "Perník Mikuláš & Čertík 60gRSPO&RA MB",
-        "EANks": "8595014610298"
+        "id": "2101091",
+        "name": "Caffeteria Africa (beans)",
+        "ean": "5900649065048",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3502002",
-        "Description": "Perník Kluk 60g x72RSPO&RA MB",
-        "EANks": "8595014600145"
+        "id": "2101092",
+        "name": "Caffeteria Asia  (beans)",
+        "ean": "5900649065000",
+        "variants": "false",
+        "gram": "500"
     },
     {
-        "ItemNo": "3502003",
-        "Description": "Perník Kohout 60g x72RSPO&RA MB",
-        "EANks": "8595014600176"
+        "id": "3400909",
+        "name": "TS Oplatka arašída ",
+        "ean": "5051007168304",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502004",
-        "Description": "Perník Zajíc 60g x72RSPO&RA MB",
-        "EANks": "8595014600121"
+        "id": "3400906",
+        "name": "TS Oplatka mléčná ",
+        "ean": "5051007168298",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502005",
-        "Description": "Perník švestka 60g x72RSPO&RA MB",
-        "EANks": "8595014600053"
+        "id": "3400907",
+        "name": "TS Oplatka čokoláda ",
+        "ean": "5051007168281",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502006",
-        "Description": "Perník citrón 60g x72RSPO&RA MB",
-        "EANks": "8595014600169"
+        "id": "3400908",
+        "name": "TS Oplatka lískooř ",
+        "ean": "5051007168274",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502007",
-        "Description": "Perník rybízek 60g x72RSPO&RA MB",
-        "EANks": "8595014600084"
+        "id": "3513035",
+        "name": "TS perník jahoda",
+        "ean": "5051007168267",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3502008",
-        "Description": "Perník višeň 60g x72RSPO&RA MB",
-        "EANks": "8595014600152"
+        "id": "3513009",
+        "name": "TS perník švestka ",
+        "ean": "5051007168250",
+        "variants": "false",
+        "gram": "60"
     },
     {
-        "ItemNo": "3502009",
-        "Description": "Perník malina 60g x72RSPO&RA MB",
-        "EANks": "8594033192846"
+        "id": "3400874",
+        "name": "Tesco Wafer Milk ",
+        "ean": "5051007158626",
+        "variants": "false",
+        "gram": "45"
     },
     {
-        "ItemNo": "3502010",
-        "Description": "Perník meruňka 60g x72RSPO&RA MB",
-        "EANks": "8594033192853"
+        "id": "3001063",
+        "name": "TS Sponge Biscuits ",
+        "ean": "5051007158619",
+        "variants": "false",
+        "gram": "480"
     },
     {
-        "ItemNo": "3502011",
-        "Description": "Perník borůvka 60g x72RSPO&RA MB",
-        "EANks": "8595014600237"
+        "id": "3001062",
+        "name": "TS Sponge Biscuits ",
+        "ean": "5051007158602",
+        "variants": "false",
+        "gram": "240"
     },
     {
-        "ItemNo": "3502012",
-        "Description": "Perník jahůdka 60g x72RSPO&RA MB",
-        "EANks": "8595014600015"
+        "id": "3401151",
+        "name": "SCOUTY kokosové ",
+        "ean": "4335619060883",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502013",
-        "Description": "Perník Mikuláš.nadílka60g x36RSPO&RA MB",
-        "EANks": "8595014610281"
+        "id": "3401150",
+        "name": "SCOUTY mléčné ",
+        "ean": "4335619060876",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502014",
-        "Description": "Perník Mikuláš&Čert 60g x 36gRSPO&RA MB",
-        "EANks": "8595014610298"
+        "id": "3401149",
+        "name": "SCOUTY lískooříšková ",
+        "ean": "4335619060869",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502015",
-        "Description": "Perník KLUK 60g x36RSPO&RA MB",
-        "EANks": "8595014600145"
+        "id": "3401148",
+        "name": "SCOUTY čokoládová ",
+        "ean": "4335619060852",
+        "variants": "false",
+        "gram": "47"
     },
     {
-        "ItemNo": "3502016",
-        "Description": "Perník Kohout 60g x36RSPO&RA MB",
-        "EANks": "8595014600176"
+        "id": "2216002",
+        "name": "My Price Cocoa powder ",
+        "ean": "4306188018636",
+        "variants": "false",
+        "gram": "100"
     },
     {
-        "ItemNo": "3502017",
-        "Description": "Perník Zajíc 60g x36RSPO&RA MB",
-        "EANks": "8595014600121"
+        "id": "3401143",
+        "name": "TEREZKA oplat.oříšk ",
+        "ean": "4056489911425",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3502018",
-        "Description": "Perník švestka 60g x36RSPO&RA MB",
-        "EANks": "8595014600053"
+        "id": "3401144",
+        "name": "TEREZKA Peanut butter",
+        "ean": "4056489911418",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3502020",
-        "Description": "Perník rybízek 60g x36RSPO&RA MB",
-        "EANks": "8595014600084"
+        "id": "3001065",
+        "name": "Piškoty TASTINO ",
+        "ean": "4056489909002",
+        "variants": "false",
+        "gram": "350"
     },
     {
-        "ItemNo": "3502022",
-        "Description": "Perník malina 60g x36RSPO&RA MB",
-        "EANks": "8594033192846"
+        "id": "3401138",
+        "name": "TEREZKA oplat mléčná",
+        "ean": "4056489725329",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3502023",
-        "Description": "Perník meruňka 60g x36RSPO&RA MB",
-        "EANks": "8594033192853"
+        "id": "3401137",
+        "name": "TEREZKA čokoládová",
+        "ean": "4056489725312",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3502024",
-        "Description": "Perník borůvka 60g x36RSPO&RA MB",
-        "EANks": "8595014600237"
+        "id": "3401136",
+        "name": "TEREZKA citrón ",
+        "ean": "4056489725305",
+        "variants": "false",
+        "gram": "33"
     },
     {
-        "ItemNo": "3502025",
-        "Description": "Perník jahůdka 60g x36RSPO&RA MB",
-        "EANks": "8595014600015"
+        "id": "3001064",
+        "name": "Piškoty Tastino LIDL",
+        "ean": "4056489724797",
+        "variants": "false",
+        "gram": "120"
     },
     {
-        "ItemNo": "3502026",
-        "Description": "Perník ovocný 60gx36RSPO&RA MB",
-        "EANks": "8595014602484"
-    },
-    {
-        "ItemNo": "3513005",
-        "Description": "FL perník malina 60gx36RSPO&RA MB",
-        "EANks": "8594002839390"
-    },
-    {
-        "ItemNo": "3513006",
-        "Description": "FL perník švestka 60gx36RSPO&RA MB",
-        "EANks": "8594002839406"
-    },
-    {
-        "ItemNo": "3513007",
-        "Description": "FL perník jahoda 60gx36RSPO&RA MB",
-        "EANks": "8594002839413"
-    },
-    {
-        "ItemNo": "3513008",
-        "Description": "FL perník meruňka 60gx36RSPO&RA MB",
-        "EANks": "8594002839420"
-    },
-    {
-        "ItemNo": "3513009",
-        "Description": "TS perník švestka 60gRSPO&RA MB",
-        "EANks": "5051007168250"
-    },
-    {
-        "ItemNo": "3513010",
-        "Description": "TS perník jahoda60g RSPO&RA MB",
-        "EANks": "5051007168267"
-    },
-    {
-        "ItemNo": "3513028",
-        "Description": "ENJOY perník šves 60gRSPO&RA MB",
-        "EANks": "8595014601555"
-    },
-    {
-        "ItemNo": "3513029",
-        "Description": "ENJOY perník jahoda 60gRSPO&RA MB",
-        "EANks": "8595014601579"
-    },
-    {
-        "ItemNo": "3513030",
-        "Description": "FL Perník Mikuláš 60gRSPO&RA MB",
-        "EANks": "8594002839512"
-    },
-    {
-        "ItemNo": "3513031",
-        "Description": "Perník KITBIS švest 60gRSPO&RA MB",
-        "EANks": "8590421069318"
-    },
-    {
-        "ItemNo": "3513032",
-        "Description": "Perník KITBIS jahoda 60gRSPO&RA MB",
-        "EANks": "8590421069325"
-    },
-    {
-        "ItemNo": "3513033",
-        "Description": "Perník KITBIS borův 60gRSPO&RA MB",
-        "EANks": "8590421069332"
-    },
-    {
-        "ItemNo": "3513034",
-        "Description": "Perník KITBIS malina 60gRSPO&RA MB",
-        "EANks": "8590421069349"
-    },
-    {
-        "ItemNo": "3513035",
-        "Description": "TS perník jahoda 60gRSPO&RA MB",
-        "EANks": "5051007168267"
-    },
-    {
-        "ItemNo": "3513036",
-        "Description": "Kanapka pernikowa malinowa 60gRSPO&RA MB",
-        "EANks": "8595014602712"
-    },
-    {
-        "ItemNo": "3513037",
-        "Description": "Kanapka piernikowa sliwkowa60gRSPO&RA MB",
-        "EANks": "8595014602729"
-    },
-    {
-        "ItemNo": "3513038",
-        "Description": "Kanapka piernikowa jagodowa60gRSPO&RA MB",
-        "EANks": "8595014602705"
-    },
-    {
-        "ItemNo": "3516072",
-        "Description": "Perník TERKA slivka 60gRSPO&RA MB",
-        "EANks": "8586023530738"
-    },
-    {
-        "ItemNo": "3516073",
-        "Description": "Perník TERKA čučor 60gRSPO&RA MB",
-        "EANks": "8586023530745"
-    },
-    {
-        "ItemNo": "3519039",
-        "Description": "Sandwich GANG švestka 40gRA MB",
-        "EANks": "8594002839857"
-    },
-    {
-        "ItemNo": "3519040",
-        "Description": "Sandwich GANG meruňka 40gRA MB",
-        "EANks": "8594002839840"
-    },
-    {
-        "ItemNo": "3519041",
-        "Description": "Sandwich GANG jahoda 40gRA MB",
-        "EANks": "8595014602798"
-    },
-    {
-        "ItemNo": "3519042",
-        "Description": "Sandwich GANG borůvka 40gRA MB",
-        "EANks": "8595014602804"
-    },
-    {
-        "ItemNo": "4000914",
-        "Description": "(M) HI MIDI COOKIES MIX 21 SZT",
-        "EANks": ""
-    },
-    {
-        "ItemNo": "4000927",
-        "Description": "(M) WAFELKI ALPINO MIX 70 SZT",
-        "EANks": ""
-    },
-    {
-        "ItemNo": "4001171",
-        "Description": "Cookies Dark choco 150gRSPO MB",
-        "EANks": "8594002835200"
-    },
-    {
-        "ItemNo": "4001176",
-        "Description": "Rings rasp+darkchoco150gRSPO&RA MB",
-        "EANks": "8594002834685"
-    },
-    {
-        "ItemNo": "4001178",
-        "Description": "Cookies pieceschoco150gRSPO MB",
-        "EANks": "8594002834630"
-    },
-    {
-        "ItemNo": "4001180",
-        "Description": "Rings dark choco 150gRSPO&RA MB",
-        "EANks": "8594002834678"
-    },
-    {
-        "ItemNo": "4001181",
-        "Description": "Rings raspbfilling 150gRSPO MB",
-        "EANks": "8594002834692"
-    },
-    {
-        "ItemNo": "4001185",
-        "Description": "Cookies peanutschoco150gRSPO&RA MB",
-        "EANks": "8594002834654"
-    },
-    {
-        "ItemNo": "4001188",
-        "Description": "Cookies+ peanuts 150gRSPO MB",
-        "EANks": "8594002838485"
-    },
-    {
-        "ItemNo": "4001190",
-        "Description": "Cookies Express 270 gRSPO MB",
-        "EANks": "8595014602767"
-    },
-    {
-        "ItemNo": "4001246",
-        "Description": "Cookies Sunshine 160g",
-        "EANks": "5906190554772"
-    },
-    {
-        "ItemNo": "4001419",
-        "Description": "Rings Sunshine 160gRSPO MB",
-        "EANks": "8594002834715"
-    },
-    {
-        "ItemNo": "4001466",
-        "Description": "Cookies sele260g CHEPRSPO MB",
-        "EANks": "8594002836481"
-    },
-    {
-        "ItemNo": "4001467",
-        "Description": "Cookies selection 260gRSPO MB",
-        "EANks": "8594002836481"
-    },
-    {
-        "ItemNo": "4001468",
-        "Description": "Cookies 260g ChristmasRSPO MB",
-        "EANks": "8594002836481"
-    },
-    {
-        "ItemNo": "4001469",
-        "Description": "Cookies selection 260gRSPO MB",
-        "EANks": "8594002836481"
-    },
-    {
-        "ItemNo": "4001643",
-        "Description": "YourSize HARD 55gx9 ořech/čok",
-        "EANks": "8594002836573"
-    },
-    {
-        "ItemNo": "4001644",
-        "Description": "YourSize HARD 55gx9 caramel",
-        "EANks": "8594002836610"
-    },
-    {
-        "ItemNo": "4001698",
-        "Description": "EASY Wafer choco 33gRSPO&RA MB",
-        "EANks": "8594002837198"
-    },
-    {
-        "ItemNo": "4001699",
-        "Description": "EASY Wafer milky 33gRSPO MB",
-        "EANks": "8594002837211"
-    },
-    {
-        "ItemNo": "4001700",
-        "Description": "EASY Wafer lemon fl.33gRSPO MB",
-        "EANks": "8594002837235"
+        "id": "3001057",
+        "name": "Piškoty Tastino LIDL",
+        "ean": "4056489064176",
+        "variants": "false",
+        "gram": "250"
     }
 ]

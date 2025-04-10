@@ -17,67 +17,20 @@ import { Haptics } from '@capacitor/haptics';
 import './Home.css';
 import { PiBarcodeThin } from 'react-icons/pi';
 import db from '../data/database.json';
-// http://10.0.1.51:5000/sharing/t0ukj9DG3
 import { ScreenOrientation } from '@capacitor/screen-orientation';
 import { App } from '@capacitor/app';
 import { Toast } from '@capacitor/toast';
+import { Table } from 'reactstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 ScreenOrientation.lock({ orientation: 'portrait' });
 
-// const updateDatabase = async () => {
-//   try {
-//     const response = await fetch('http://10.0.1.51/up/products.json');
-//     if (!response.ok) {
-//       setMessage('nelze stahnout');
-//       throw new Error('❌ Nelze stáhnout JSON');
-//     }
-
-//     const jsonData = await response.json();
-//     setMessage(jsonData);
-//     // Uložit do lokálního úložiště
-//     await Filesystem.writeFile({
-//       path: 'products.json',
-//       data: JSON.stringify(jsonData),
-//       directory: Directory.Data,
-//       encoding: Encoding.UTF8,
-//     });
-//     setMessagee('aktualizovano');
-//     console.log('✅ JSON databáze aktualizována!');
-//   } catch (error) {
-//     setMessagee('chyba aktualizace DB');
-//     console.error('Chyba při aktualizaci databáze:', error);
-//   }
-// };
-// const downloadImage = async (imageUrl: string, imageName: string) => {
-//   try {
-//     const response = await fetch(imageUrl);
-//     if (!response.ok) throw new Error('❌ Nelze stáhnout obrázek');
-
-//     const blob = await response.blob();
-//     const reader = new FileReader();
-
-//     reader.onloadend = async () => {
-//       const base64data = reader.result?.toString().split(',')[1];
-
-//       await Filesystem.writeFile({
-//         path: `images/${imageName}`,
-//         data: base64data || '',
-//         directory: Directory.Data,
-//         encoding: Encoding.Base64,
-//       });
-
-//       console.log(`✅ Obrázek ${imageName} uložen!`);
-//     };
-
-//     reader.readAsDataURL(blob);
-//   } catch (error) {
-//     console.error('Chyba při stahování obrázku:', error);
-//   }
-// };
-
 // Funkce pro vyhledání produktu podle EAN
 const findProductByEAN = (ean: string) => {
-  return db.find((p) => p.EANks === ean);
+  return db.find((p) => p.ean === ean);
 };
 // Funkce pro získání formátovaného data
 const getFormattedTimestamp = () => {
@@ -136,20 +89,19 @@ const loadLogs = async () => {
 const BarcodeScan: React.FC = () => {
   const [scannedCode, setScannedCode] = useState<string | null>(null);
   const [backPressed, setBackPressed] = useState(false);
+  const [image, setImage] = useState<string | null>(null);
+  const [images, setImages] = useState<string[]>([]);
+
   const [item, setItem] = useState<{
-    ItemNo: number;
+    id: number;
     // image: string;
-    EANks: string;
+    ean: string;
     // brand: string;
-    description: string;
+    name: string;
+    variants: string;
+    gram: string;
   } | null>(null);
-  // const [item, setItem] = useState<{
-  //   id: 1;
-  //   image: 'images/8594033198633';
-  //   ean: '8594033198633';
-  //   brand: 'Fresh';
-  //   name: 'Oblátka s čokoládovou náplňou';
-  // } | null>(null);
+
   const [logs, setLogs] = useState<any[]>([]); // Stav pro logy
 
   // Funkce pro skenování čárového kódu
@@ -160,42 +112,68 @@ const BarcodeScan: React.FC = () => {
         const scannedValue = result.barcodes[0].rawValue;
         setScannedCode(scannedValue);
         Haptics.vibrate({ duration: 200 });
-        // Hledání produktu podle načteného kódu
+
         const foundItem = findProductByEAN(scannedValue);
 
-        setItem(
-          foundItem
-            ? {
-                ItemNo: Number(foundItem.ItemNo), // Převedení na číslo
-                EANks: foundItem.EANks,
-                description: foundItem.Description || 'Popis není dostupný', // Oprava velkého "D" na malé "d"
+        if (foundItem != undefined) {
+          setItem({
+            id: Number(foundItem.id),
+            ean: foundItem.ean,
+            name: foundItem.name || 'Popis není dostupný',
+            gram: foundItem.gram,
+            variants: foundItem.variants,
+          });
+
+          const imageList: string[] = [];
+          const formats = ['png', 'jpg'];
+
+          for (let i = 0; i < 5; i++) {
+            const baseName = i === 0 ? foundItem.ean : `${foundItem.ean}-${i}`;
+            let found = false;
+
+            for (const ext of formats) {
+              const path = `images/${baseName}.${ext}`;
+              try {
+                const response = await fetch(path);
+                if (response.ok) {
+                  imageList.push(path);
+                  found = true;
+                  break;
+                }
+              } catch (err) {
+                console.warn(`Nepodařilo se načíst obrázek: ${path}`);
               }
-            : {
-                ItemNo: 0,
-                EANks: scannedValue,
-                description: 'Produkt nenalezen',
-              },
-        );
+            }
 
-        // Záznam do logu
-        const timestamp = getFormattedTimestamp();
-        const resultMessage = foundItem
-          ? 'Shoda nalezena'
-          : 'Produkt nenalezen';
-        await saveLog({ code: scannedValue, result: resultMessage, timestamp });
+            if (!found) {
+              break;
+            }
+          }
 
-        // Načteme logy znovu, aby se zobrazily v aplikaci
-        const updatedLogs = await loadLogs();
-        setLogs(updatedLogs);
+          setImages(imageList);
+        } else {
+          setItem({
+            id: 0,
+            ean: scannedValue,
+            name: 'Produkt nenalezen',
+            gram: '???',
+            variants: 'false',
+          });
+          setImages(['images/error.png']);
+        }
       } else {
         setScannedCode('Žádný kód nenačten.');
         setItem(null);
+        setImages(['images/error.png']);
       }
     } catch (error) {
       console.error('Chyba při skenování:', error);
       setScannedCode('Chyba při skenování.');
+      setItem(null);
+      setImages(['images/error.png']);
     }
   };
+
   useEffect(() => {
     let backButtonListener: any;
 
@@ -233,18 +211,6 @@ const BarcodeScan: React.FC = () => {
     };
   }, [backPressed]);
 
-  // useEffect(() => {
-  //   loadLogs().then((loadedLogs) => {
-  //     setLogs(loadedLogs); // Načteme logy při startu aplikace
-  //   });
-  // }, []);
-  // useEffect(() => {
-  //   const fetchAndUpdateDatabase = async () => {
-  //     await updateDatabase();
-  //   };
-
-  //   fetchAndUpdateDatabase();
-  // }, []);
   return (
     <IonPage>
       <IonContent className="ion-padding">
@@ -261,63 +227,88 @@ const BarcodeScan: React.FC = () => {
           </IonRow> */}
           <IonRow>
             <IonCol>
-              <div className="placeholder">
-                {/* {item && <h2>{item?.brand || '?'}</h2>} */}
+              <Table bordered striped>
+                <tbody>
+                  {/* <tr>
+                    <th scope="row">Značka</th>
+                    <td>{item && <h6>{item.name}</h6>}</td>
+                  </tr> */}
+                  <tr>
+                    <th scope="row">Název</th>
+                    <td>
+                      <div id="xxx">
+                        {item && <p className="marg-zero">{item.name}</p>}
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Váha</th>
+                    <td>
+                      {item && (
+                        <h6>
+                          {item.gram}
+                          {item.gram == '???' ? '' : 'g'}
+                        </h6>
+                      )}
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <div
+                className={`image-container ${
+                  item && images.length > 1 ? 'pozor' : '' // tady zkusit zmenu
+                }`}
+              >
+                {item && images.length === 1 && <IonImg src={images[0]} />}
+                {item && images.length > 1 && (
+                  <Swiper
+                    modules={[Navigation]}
+                    navigation
+                    spaceBetween={10}
+                    slidesPerView={1}
+                  >
+                    {images.map((imgSrc, index) => (
+                      <SwiperSlide key={index}>
+                        <IonImg src={imgSrc} />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                )}
               </div>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <div className="placeholder">
-                {item && <h2>{item?.description || '?'}</h2>}
+              <div className="placeholderlada">
+                {item && images.length > 1 && (
+                  <p className="text-red">! více obalových variant !</p>
+                )}
               </div>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <div className="image-container">
-                {/* {item && (
-                  <IonImg className="obal" src={item?.image || 'error.png'} />
-                )} */}
-              </div>
-            </IonCol>
-          </IonRow>
-          <IonRow></IonRow>
-          <IonRow>
-            <IonCol>
-              <IonButton expand="full" onClick={startScan} shape="round">
-                <PiBarcodeThin size={80} />
+              <IonButton
+                className="scanbtn"
+                expand="full"
+                onClick={startScan}
+                shape="round"
+              >
+                <PiBarcodeThin size={70} />
                 {/* <h1>Scanovat</h1> */}
               </IonButton>
             </IonCol>
           </IonRow>
           {scannedCode && (
             <IonText class="text-center">
-              <p>Načtený kód:</p>
+              <p className="marg-zero">Načtený kód:</p>
               <h2>{scannedCode}</h2>
             </IonText>
           )}
-          {/* <IonButton expand="full" onClick={updateDatabase}>
-            Aktualizovat databázi
-          </IonButton>
-          {message && <p>{message}</p>}
-          {messagee && <p>{messagee}</p>} */}
-          {/* <IonText>
-          <h2>Logy:</h2>
-        </IonText> */}
-
-          {/* Zobrazení logů */}
-          {/* <IonList>
-          {logs.map((log, index) => (
-            <IonItem key={index}>
-              <IonText>
-                <p>
-                  <strong>{log.timestamp}</strong> - {log.code}: {log.result}
-                </p>
-              </IonText>
-            </IonItem>
-          ))}
-        </IonList> */}
         </IonGrid>
       </IonContent>
     </IonPage>

@@ -1,0 +1,905 @@
+[
+    {
+        "id": "3502001",
+        "name": "Perník Mikuláš & Čertík",
+        "gram": "60",
+        "ean": "8595014610298",
+        "variants": "false"
+    },
+    {
+        "id": "3502000",
+        "name": "Perník Mikulášská nadílka",
+        "gram": "60",
+        "ean": "8595014610281",
+        "variants": "false"
+    },
+    {
+        "id": "3401147",
+        "name": "Marilky kokos ",
+        "gram": "47",
+        "ean": "8595014602989",
+        "variants": "false"
+    },
+    {
+        "id": "3519042",
+        "name": "Sandwich GANG borůvka",
+        "gram": "40",
+        "ean": "8595014602804",
+        "variants": "false"
+    },
+    {
+        "id": "3519041",
+        "name": "Sandwich GANG jahoda ",
+        "gram": "40",
+        "ean": "8595014602798",
+        "variants": "false"
+    },
+    {
+        "id": "3502026",
+        "name": "Perník ovocný klaun",
+        "gram": "60",
+        "ean": "8595014602484",
+        "variants": "false"
+    },
+    {
+        "id": "3400987",
+        "name": "Marilky příchuť višeň",
+        "gram": "40",
+        "ean": "8595014602385",
+        "variants": "false"
+    },
+    {
+        "id": "3400986",
+        "name": "Marilky přích vaječný koňak",
+        "gram": "40",
+        "ean": "8595014602378",
+        "variants": "false"
+    },
+    {
+        "id": "3513029",
+        "name": "ENJOY perník jahoda ",
+        "gram": "60",
+        "ean": "8595014601579",
+        "variants": "false"
+    },
+    {
+        "id": "3513028",
+        "name": "ENJOY perník šves",
+        "gram": "60",
+        "ean": "8595014601555",
+        "variants": "false"
+    },
+    {
+        "id": "3502024",
+        "name": "Perník borůvka 60g",
+        "gram": "60",
+        "ean": "8595014600237",
+        "variants": "false"
+    },
+    {
+        "id": "3502016",
+        "name": "Perník Kohout 60g",
+        "gram": "60",
+        "ean": "8595014600176",
+        "variants": "false"
+    },
+    {
+        "id": "3502006",
+        "name": "Perník citrón 60g ",
+        "gram": "60",
+        "ean": "8595014600169",
+        "variants": "false"
+    },
+    {
+        "id": "3502008",
+        "name": "Perník višeň 60g",
+        "gram": "60",
+        "ean": "8595014600152",
+        "variants": "false"
+    },
+    {
+        "id": "3502015",
+        "name": "Perník KLUK 60g ",
+        "gram": "60",
+        "ean": "8595014600145",
+        "variants": "false"
+    },
+    {
+        "id": "3502017",
+        "name": "Perník Zajíc 60g ",
+        "gram": "60",
+        "ean": "8595014600121",
+        "variants": "false"
+    },
+    {
+        "id": "3502020",
+        "name": "Perník rybízek 60g ",
+        "gram": "60",
+        "ean": "8595014600084",
+        "variants": "false"
+    },
+    {
+        "id": "3502007",
+        "name": "Perník rybízek 60g",
+        "gram": "60",
+        "ean": "8595014600084",
+        "variants": "false"
+    },
+    {
+        "id": "3502018",
+        "name": "Perník švestka 60g",
+        "gram": "60",
+        "ean": "8595014600053",
+        "variants": "false"
+    },
+    {
+        "id": "3502025",
+        "name": "Perník jahůdka 60g ",
+        "gram": "60",
+        "ean": "8595014600015",
+        "variants": "false"
+    },
+    {
+        "id": "3400904",
+        "name": "FL oplatka lískooř.",
+        "gram": "36",
+        "ean": "8594033199647",
+        "variants": "false"
+    },
+    {
+        "id": "3400905",
+        "name": "FL oplatka čokoláda ",
+        "gram": "36",
+        "ean": "8594033199630",
+        "variants": "false"
+    },
+    {
+        "id": "3401023",
+        "name": "Marilky griliášové ",
+        "gram": "47",
+        "ean": "8594033199210",
+        "variants": "false"
+    },
+    {
+        "id": "3401090",
+        "name": "Oplatka FRESH čokoláda",
+        "gram": "36",
+        "ean": "8594033198633",
+        "variants": "false"
+    },
+    {
+        "id": "3401089",
+        "name": "Oplatka FRESH lískooříšek",
+        "gram": "36",
+        "ean": "8594033198626",
+        "variants": "false"
+    },
+    {
+        "id": "3014022",
+        "name": "ARO Dětské piškoty ",
+        "gram": "240",
+        "ean": "8594033198480",
+        "variants": "false"
+    },
+    {
+        "id": "3014021",
+        "name": "ARO Dětské piškoty ",
+        "gram": "120",
+        "ean": "8594033198466",
+        "variants": "false"
+    },
+    {
+        "id": "3010004",
+        "name": "Piškoty Clever ",
+        "gram": "250",
+        "ean": "8594033198220",
+        "variants": "false"
+    },
+    {
+        "id": "3001061",
+        "name": "Marila piškoty ",
+        "gram": "300",
+        "ean": "8594033198206",
+        "variants": "false"
+    },
+    {
+        "id": "3401127",
+        "name": "Marilky lískooříš.",
+        "gram": "140",
+        "ean": "8594033197902",
+        "variants": "false"
+    },
+    {
+        "id": "3401126",
+        "name": "Marilky Black čokol.",
+        "gram": "140",
+        "ean": "8594033197568",
+        "variants": "false"
+    },
+    {
+        "id": "3401128",
+        "name": "Marilky citrónové ",
+        "gram": "140",
+        "ean": "8594033197520",
+        "variants": "false"
+    },
+    {
+        "id": "3401027",
+        "name": "Marilky lískooříšk.",
+        "gram": "36",
+        "ean": "8594033194970",
+        "variants": "true"
+    },
+    {
+        "id": "3401033",
+        "name": "Marilky Sněhul lísko",
+        "gram": "36",
+        "ean": "8594033194970",
+        "variants": "true"
+    },
+    {
+        "id": "3401034",
+        "name": "Marilky Velikonoční  lísko.",
+        "gram": "36",
+        "ean": "8594033194970",
+        "variants": "true"
+    },
+    {
+        "id": "3401026",
+        "name": "Marilky čokoládové ",
+        "gram": "36",
+        "ean": "8594033194963",
+        "variants": "true"
+    },
+    {
+        "id": "3401036",
+        "name": "Marilky Sněhulák čoko",
+        "gram": "36",
+        "ean": "8594033194963",
+        "variants": "true"
+    },
+    {
+        "id": "3401035",
+        "name": "Marilky Velikonoční  čoko",
+        "gram": "36",
+        "ean": "8594033194963",
+        "variants": "true"
+    },
+    {
+        "id": "3502023",
+        "name": "Perník meruňka ",
+        "gram": "60",
+        "ean": "8594033192853",
+        "variants": "false"
+    },
+    {
+        "id": "3502022",
+        "name": "Perník malina ",
+        "gram": "60",
+        "ean": "8594033192846",
+        "variants": "false"
+    },
+    {
+        "id": "3001050",
+        "name": "Marila piškoty ",
+        "gram": "240",
+        "ean": "8594033192082",
+        "variants": "false"
+    },
+    {
+        "id": "3519039",
+        "name": "Sandwich GANG švestka",
+        "gram": "40",
+        "ean": "8594002839857",
+        "variants": "false"
+    },
+    {
+        "id": "3519040",
+        "name": "Sandwich GANG meruňka",
+        "gram": "40",
+        "ean": "8594002839840",
+        "variants": "false"
+    },
+    {
+        "id": "3404047",
+        "name": "ST Dita mléčná ",
+        "gram": "45",
+        "ean": "8594002839260",
+        "variants": "false"
+    },
+    {
+        "id": "3400879",
+        "name": "CLEVER celom.čokolád",
+        "gram": "40",
+        "ean": "8594002839178",
+        "variants": "false"
+    },
+    {
+        "id": "3400880",
+        "name": "CLEVER celom.lískooř ",
+        "gram": "40",
+        "ean": "8594002839161",
+        "variants": "false"
+    },
+    {
+        "id": "3401130",
+        "name": "Marilky Peanut Butter",
+        "gram": "33",
+        "ean": "8594002839048",
+        "variants": "false"
+    },
+    {
+        "id": "3400881",
+        "name": "Marilka GOLD čokolád.",
+        "gram": "45",
+        "ean": "8594002838935",
+        "variants": "false"
+    },
+    {
+        "id": "3400882",
+        "name": "Marilka GOLD DUO ",
+        "gram": "45",
+        "ean": "8594002838911",
+        "variants": "false"
+    },
+    {
+        "id": "3400883",
+        "name": "Marilka GOLD mléčná",
+        "gram": "45",
+        "ean": "8594002838898",
+        "variants": "false"
+    },
+    {
+        "id": "3404045",
+        "name": "ST nugátové ",
+        "gram": "140",
+        "ean": "8594002838836",
+        "variants": "false"
+    },
+    {
+        "id": "3404044",
+        "name": "ST lískooříškové ",
+        "gram": "140",
+        "ean": "8594002838812",
+        "variants": "false"
+    },
+    {
+        "id": "3404043",
+        "name": "KLASIK oplatka oříšk",
+        "gram": "47",
+        "ean": "8594002838775",
+        "variants": "false"
+    },
+    {
+        "id": "3404042",
+        "name": "KLASIK oplatka arašíd",
+        "gram": "47",
+        "ean": "8594002838751",
+        "variants": "false"
+    },
+    {
+        "id": "3400978",
+        "name": "CLEVER oplatka čokol ",
+        "gram": "40",
+        "ean": "8594002838560",
+        "variants": "false"
+    },
+    {
+        "id": "3400979",
+        "name": "CLEVER oplat.lískoř",
+        "gram": "40",
+        "ean": "8594002838546",
+        "variants": "false"
+    },
+    {
+        "id": "4001188",
+        "name": "Cookies+ peanuts",
+        "gram": "150",
+        "ean": "8594002838485",
+        "variants": "false"
+    },
+    {
+        "id": "3401125",
+        "name": "EASY Black DUO ",
+        "gram": "33",
+        "ean": "8594002838461",
+        "variants": "false"
+    },
+    {
+        "id": "3401124",
+        "name": "EASY Black mleczny ",
+        "gram": "33",
+        "ean": "8594002838447",
+        "variants": "false"
+    },
+    {
+        "id": "3401123",
+        "name": "EASY Black czekol",
+        "gram": "33",
+        "ean": "8594002838423",
+        "variants": "false"
+    },
+    {
+        "id": "3401117",
+        "name": "Marilky Black nugát ",
+        "gram": "33",
+        "ean": "8594002838041",
+        "variants": "false"
+    },
+    {
+        "id": "3401116",
+        "name": "Marilky Black DUO ",
+        "gram": "33",
+        "ean": "8594002838027",
+        "variants": "false"
+    },
+    {
+        "id": "3401115",
+        "name": "Marilky Black mléčná",
+        "gram": "33",
+        "ean": "8594002838003",
+        "variants": "false"
+    },
+    {
+        "id": "3401114",
+        "name": "Marilky Black čokol.",
+        "gram": "33",
+        "ean": "8594002837983",
+        "variants": "false"
+    },
+    {
+        "id": "3001004",
+        "name": "Dětské piškoty  RETRO",
+        "gram": "120",
+        "ean": "8594002837693",
+        "variants": "false"
+    },
+    {
+        "id": "3400999",
+        "name": "Marilky smetanové RETRO",
+        "gram": "47",
+        "ean": "8594002837624",
+        "variants": "false"
+    },
+    {
+        "id": "3400998",
+        "name": "Marilky nugátové RETRO",
+        "gram": "47",
+        "ean": "8594002837617",
+        "variants": "false"
+    },
+    {
+        "id": "3400997",
+        "name": "Marilky griliáš RETRO",
+        "gram": "47",
+        "ean": "8594002837600",
+        "variants": "false"
+    },
+    {
+        "id": "3400995",
+        "name": "Marilky lískooříškové RETRO",
+        "gram": "47",
+        "ean": "8594002837594",
+        "variants": "false"
+    },
+    {
+        "id": "3400994",
+        "name": "Marilky čokoládovRETRO",
+        "gram": "47",
+        "ean": "8594002837587",
+        "variants": "false"
+    },
+    {
+        "id": "3400996",
+        "name": "Marilky arašídovéRETRO",
+        "gram": "47",
+        "ean": "8594002837570",
+        "variants": "false"
+    },
+    {
+        "id": "3400985",
+        "name": "Marilky arašídové",
+        "gram": "40",
+        "ean": "8594002837396",
+        "variants": "false"
+    },
+    {
+        "id": "3400984",
+        "name": "Marilky smet. Příchuť",
+        "gram": "40",
+        "ean": "8594002837372",
+        "variants": "false"
+    },
+    {
+        "id": "3400983",
+        "name": "Marilky nugátové",
+        "gram": "40",
+        "ean": "8594002837358",
+        "variants": "false"
+    },
+    {
+        "id": "3400982",
+        "name": "Marilky lískooříš.",
+        "gram": "40",
+        "ean": "8594002837334",
+        "variants": "false"
+    },
+    {
+        "id": "3400981",
+        "name": "Marilky čokoládové ",
+        "gram": "40",
+        "ean": "8594002837310",
+        "variants": "false"
+    },
+    {
+        "id": "4001700",
+        "name": "EASY Wafer lemon fl.",
+        "gram": "33",
+        "ean": "8594002837235",
+        "variants": "false"
+    },
+    {
+        "id": "4001699",
+        "name": "EASY Wafer milky ",
+        "gram": "33",
+        "ean": "8594002837211",
+        "variants": "false"
+    },
+    {
+        "id": "4001698",
+        "name": "EASY Wafer choco ",
+        "gram": "33",
+        "ean": "8594002837198",
+        "variants": "false"
+    },
+    {
+        "id": "3400993",
+        "name": "Marilky smet.příchuť",
+        "gram": "47",
+        "ean": "8594002836887",
+        "variants": "false"
+    },
+    {
+        "id": "3400992",
+        "name": "Marilky nugátové ",
+        "gram": "47",
+        "ean": "8594002836870",
+        "variants": "false"
+    },
+    {
+        "id": "4001468",
+        "name": "Cookies Selection 260g ",
+        "gram": "260",
+        "ean": "8594002836481",
+        "variants": "false"
+    },
+    {
+        "id": "3401004",
+        "name": "Wafle EASY mleczny",
+        "gram": "47",
+        "ean": "8594002835835",
+        "variants": "false"
+    },
+    {
+        "id": "4001171",
+        "name": "Cookies Dark choco ",
+        "gram": "150",
+        "ean": "8594002835200",
+        "variants": "false"
+    },
+    {
+        "id": "4001419",
+        "name": "Rings Sunshine ",
+        "gram": "160",
+        "ean": "8594002834715",
+        "variants": "false"
+    },
+    {
+        "id": "4001181",
+        "name": "Rings raspbfilling ",
+        "gram": "150",
+        "ean": "8594002834692",
+        "variants": "false"
+    },
+    {
+        "id": "4001176",
+        "name": "Rings rasp+darkchoco",
+        "gram": "150",
+        "ean": "8594002834685",
+        "variants": "false"
+    },
+    {
+        "id": "4001180",
+        "name": "Rings dark choco ",
+        "gram": "150",
+        "ean": "8594002834678",
+        "variants": "false"
+    },
+    {
+        "id": "4001185",
+        "name": "Cookies peanutschoco",
+        "gram": "150",
+        "ean": "8594002834654",
+        "variants": "false"
+    },
+    {
+        "id": "4001178",
+        "name": "Cookies pieceschoco",
+        "gram": "150",
+        "ean": "8594002834630",
+        "variants": "false"
+    },
+    {
+        "id": "3401008",
+        "name": "Wafle EASY orzech",
+        "gram": "47",
+        "ean": "8594002834142",
+        "variants": "false"
+    },
+    {
+        "id": "3401009",
+        "name": "Wafle EASY czeko",
+        "gram": "47",
+        "ean": "8594002834135",
+        "variants": "false"
+    },
+    {
+        "id": "3014020",
+        "name": "Piškoty ARO ",
+        "gram": "500",
+        "ean": "8594002832988",
+        "variants": "false"
+    },
+    {
+        "id": "3401030",
+        "name": "Marilky arašídové ",
+        "gram": "47",
+        "ean": "8594002832636",
+        "variants": "false"
+    },
+    {
+        "id": "3401031",
+        "name": "Marilky čokoládové ",
+        "gram": "47",
+        "ean": "8594002832629",
+        "variants": "false"
+    },
+    {
+        "id": "3401032",
+        "name": "Marilky lískooříškové",
+        "gram": "47",
+        "ean": "8594002832612",
+        "variants": "false"
+    },
+    {
+        "id": "3001000",
+        "name": "Marila piškoty 120g",
+        "gram": "120",
+        "ean": "8594002832599",
+        "variants": "false"
+    },
+    {
+        "id": "3513034",
+        "name": "Perník KITBIS malina",
+        "gram": "60",
+        "ean": "8590421069349",
+        "variants": "false"
+    },
+    {
+        "id": "3513033",
+        "name": "Perník KITBIS borův",
+        "gram": "60",
+        "ean": "8590421069332",
+        "variants": "false"
+    },
+    {
+        "id": "3513032",
+        "name": "Perník KITBIS jahoda ",
+        "gram": "60",
+        "ean": "8590421069325",
+        "variants": "false"
+    },
+    {
+        "id": "3513031",
+        "name": "Perník KITBIS švest",
+        "gram": "60",
+        "ean": "8590421069318",
+        "variants": "false"
+    },
+    {
+        "id": "3001060",
+        "name": "ALB MAXI Piškoty dětské",
+        "gram": "240",
+        "ean": "8590421053300",
+        "variants": "false"
+    },
+    {
+        "id": "3001059",
+        "name": "ALB Piškoty dětské ",
+        "gram": "120",
+        "ean": "8590421053294",
+        "variants": "false"
+    },
+    {
+        "id": "3400884",
+        "name": "Turistky čokoládové ",
+        "gram": "45",
+        "ean": "8590421047675",
+        "variants": "false"
+    },
+    {
+        "id": "3400885",
+        "name": "Turistky arašídové ",
+        "gram": "45",
+        "ean": "8590421047668",
+        "variants": "false"
+    },
+    {
+        "id": "3400886",
+        "name": "Turistky oříškové ",
+        "gram": "45",
+        "ean": "8590421047651",
+        "variants": "false"
+    },
+    {
+        "id": "3516073",
+        "name": "Perník TERKA čučor ",
+        "gram": "60",
+        "ean": "8586023530745",
+        "variants": "false"
+    },
+    {
+        "id": "3516072",
+        "name": "Perník TERKA slivka ",
+        "gram": "60",
+        "ean": "8586023530738",
+        "variants": "false"
+    },
+    {
+        "id": "3400909",
+        "name": "TS Oplatka arašída ",
+        "gram": "47",
+        "ean": "5051007168304",
+        "variants": "false"
+    },
+    {
+        "id": "3400906",
+        "name": "TS Oplatka mléčná ",
+        "gram": "47",
+        "ean": "5051007168298",
+        "variants": "false"
+    },
+    {
+        "id": "3400907",
+        "name": "TS Oplatka čokoláda ",
+        "gram": "47",
+        "ean": "5051007168281",
+        "variants": "false"
+    },
+    {
+        "id": "3400908",
+        "name": "TS Oplatka lískooř ",
+        "gram": "47",
+        "ean": "5051007168274",
+        "variants": "false"
+    },
+    {
+        "id": "3513035",
+        "name": "TS perník jahoda ",
+        "gram": "60",
+        "ean": "5051007168267",
+        "variants": "false"
+    },
+    {
+        "id": "3513009",
+        "name": "TS perník švestka ",
+        "gram": "60",
+        "ean": "5051007168250",
+        "variants": "false"
+    },
+    {
+        "id": "3400874",
+        "name": "Tesco Wafer Milk ",
+        "gram": "45",
+        "ean": "5051007158626",
+        "variants": "false"
+    },
+    {
+        "id": "3001063",
+        "name": "TS Sponge Biscuits ",
+        "gram": "480",
+        "ean": "5051007158619",
+        "variants": "false"
+    },
+    {
+        "id": "3001062",
+        "name": "TS Sponge Biscuits",
+        "gram": "240",
+        "ean": "5051007158602",
+        "variants": "false"
+    },
+    {
+        "id": "3401151",
+        "name": "SCOUTY kokosové ",
+        "gram": "47",
+        "ean": "4335619060883",
+        "variants": "false"
+    },
+    {
+        "id": "3401150",
+        "name": "SCOUTY mléčné ",
+        "gram": "47",
+        "ean": "4335619060876",
+        "variants": "false"
+    },
+    {
+        "id": "3401149",
+        "name": "SCOUTY lískooříšková ",
+        "gram": "47",
+        "ean": "4335619060869",
+        "variants": "false"
+    },
+    {
+        "id": "3401148",
+        "name": "SCOUTY čokoládová ",
+        "gram": "47",
+        "ean": "4335619060852",
+        "variants": "false"
+    },
+    {
+        "id": "3401143",
+        "name": "TEREZKA oplat.oříšk",
+        "gram": "33",
+        "ean": "4056489911425",
+        "variants": "false"
+    },
+    {
+        "id": "3401144",
+        "name": "TEREZKA Peanut butter",
+        "gram": "33",
+        "ean": "4056489911418",
+        "variants": "false"
+    },
+    {
+        "id": "3001065",
+        "name": "Piškoty TASTINO 350g XXL",
+        "gram": "350",
+        "ean": "4056489909002",
+        "variants": "false"
+    },
+    {
+        "id": "3401138",
+        "name": "TEREZKA oplat mléčná ",
+        "gram": "33",
+        "ean": "4056489725329",
+        "variants": "false"
+    },
+    {
+        "id": "3401137",
+        "name": "TEREZKA čokolád",
+        "gram": "33",
+        "ean": "4056489725312",
+        "variants": "false"
+    },
+    {
+        "id": "3401136",
+        "name": "TEREZKA přích.citrón ",
+        "gram": "33",
+        "ean": "4056489725305",
+        "variants": "false"
+    },
+    {
+        "id": "3001064",
+        "name": "Piškoty Tastino ",
+        "gram": "120",
+        "ean": "4056489724797",
+        "variants": "false"
+    },
+    {
+        "id": "3001057",
+        "name": "Piškoty Tastino ",
+        "gram": "250",
+        "ean": "4056489064176",
+        "variants": "false"
+    }
+]
