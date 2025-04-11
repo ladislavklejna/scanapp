@@ -254,10 +254,10 @@ const BarcodeScan: React.FC = () => {
                   </tr>
                 </tbody>
               </Table>
-            </IonCol>
+              {/* </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol>
+            <IonCol> */}
               <div
                 className={`image-container ${
                   item && images.length > 1 ? 'pozor' : '' // tady zkusit zmenu
