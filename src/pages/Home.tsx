@@ -173,7 +173,7 @@ const BarcodeScan: React.FC = () => {
       setImages(['images/error.png']);
     }
   };
-
+  // lepsi prizpusobeni displaye
   useEffect(() => {
     let backButtonListener: any;
 
@@ -305,7 +305,7 @@ const BarcodeScan: React.FC = () => {
           </IonRow>
           {scannedCode && (
             <IonText class="text-center">
-              <p className="marg-zero">Načtený kód:</p>
+              {/* <p className="marg-zero">Načtený kód:</p> */}
               <h2>{scannedCode}</h2>
             </IonText>
           )}
